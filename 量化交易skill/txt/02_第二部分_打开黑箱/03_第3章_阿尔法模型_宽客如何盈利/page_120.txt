@@ -1,0 +1,23 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+存在差别的重要根源。本章所提供的框架可用于评价宽客（或宽客用
+
+以评价自己的交易策略），从而分析其交易策略的本质。接下来，我
+们将目光转向风险模型——量化交易策略的另一个核心部件。
+
+
+[1] Nate Silver，The Signal and the Noise：Why Most Predictions Fail
+but Some Don’s t（New York：Penguin Press，2012）.
+
+[2] This was calculated using Bayes’s Theorem.
+
+[3] https：//normaldeviate.wordpress.com/2012/12/04/nateϋsilverϋisϋ
+aϋfrequentistreviewϋofϋtheϋsignalϋandϋtheϋnoise/.
+
+
+
+
+             专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

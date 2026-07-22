@@ -1,0 +1,49 @@
+    Reinganum, M.R. （1981）. Misspecification of capital asset pricing: Empirical
+anomalies based on earnings’yields and market values. Journal of Financial Economics
+9（1）, 19–46.
+
+     Romano, J. P., A.M. Shaikh, and M. Wolf（2008）. Formalized data snooping based
+on generalized error rates. Econometric Theory 24（2）, 404–447.
+
+    Romano, J.P. and M. Wolf（2005）. Stepwise multiple testing as formalized data
+snooping. Econometrica 73（4）, 1237–1282.
+
+      Romano, J.P. and M. Wolf（2007）. Control of generalized error rates in multiple
+testing. The Annals of Statistics 35（4）, 1378–1408.
+
+      Rosenberg, B., K. Reid, and R. Lanstein（1985）. Persuasive evidence of market
+inefficiency. The Journal of Portfolio Management 11（3）, 9–16.
+
+    Ross, S.A. （1976）. The arbitrage theory of capital asset pricing. Journal of
+Economic Theory 13（3）, 341–360.
+
+     Rouwenhorst, K.G. （1998）. International momentum strategies. Journal of
+Finance 53（1）, 267–284. Rouwenhorst, K.G. （1999）. Local return factors and
+turnover in emerging stock markets. Journal of Finance 54（4）, 1439–1464.
+
+    Ruud, P.A. （2000）. An Introduction to Classical Econometric Theory. New York,
+NY: OxfordUniversity Press.
+
+    Samuelson, P.A. （1965）. Proof that properly anticipated pricesfluctuate randomly.
+Industrial Management Review 6（2）, 41–49.
+
+    Savor, P. and M. Wilson（2013）. How much do investors care about
+macroeconomics risk?Evidence from scheduled economic announcements. Journal of
+Financial and Quantitative Analysis 48（2）, 343–375.
+
+    Savor, P. and M. Wilson（2014）. Asset pricing: A tale of two days. Journal of
+Financial Economics 113（2）, 171–201.
+
+    Schneider, P., C. Wagner, and J. Zechner（2020）. Low riskanomalies?Journal of
+Financeforthcoming. Schwert, G.W. （1983）. Size and stock returns, and other
+empirical regularities. Journal of Financial Economics 12（1）, 3–12.
+
+    Sewell, M. （2007）. Behaviouralfinance. University of Cambridge.
+
+     Shanken, J. （1987）. A Bayesian approach to testing portfolio efficiency. Journal
+of Financial Economics 19（2）, 195–215.
+
+    Shanken, J. （1992）. On the estimation of beta-pricing models. Review of
+Financial Studies 5（1）, 1–33.
+
+    Sharpe, W.F. （1964）. Capital asset prices: A theory of market equilibrium under

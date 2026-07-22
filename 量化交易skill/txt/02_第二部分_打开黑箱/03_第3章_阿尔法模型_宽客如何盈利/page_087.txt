@@ -1,0 +1,28 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+[2]   Larry    Hite    and    Steven    Feldman，“Game        Theory
+
+Applications，”Commodity Journal（May–June 1972）.
+[3] Ginger Szala，“Making a Mint：How a Scientist，Statistician and
+
+Businessman Mixed，”Futures，March 1，1989.
+[4] Gregory Zuckerman，“Renaissance Man：James Simons Does the
+
+Math on Fund，”Wall Street Journal，July 1，2005.
+
+[5] Eugene Fama and Kenneth French，“The Cross Section of Expected
+Stock Returns，”Journal of Finance 47（June 1992）：427.Alpha
+
+Models：How Quants Make Money 65
+[6] Ray Ball，“Anomalies in Relationships Between Securities’s Yields
+and YieldϋSurrogates，”Journal of Financial Economics 6，nos.2–
+
+3（1978）：103–126.
+
+
+
+
+              专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

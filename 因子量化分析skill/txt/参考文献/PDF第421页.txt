@@ -1,0 +1,49 @@
+    Treynor, J.L. （1961）. Market value, time, and risk. Unpublished manuscript.
+
+    Treynor, J.L. （1962）. Toward of theory of market value of risky assets.
+Unpublished manuscript.
+
+    Treynor, J.L. and K.K. Mazuy（1966）. Can mutual funds outguess the market?
+Harvard Business Review 44（July-August）, 131–136.
+
+    Tversky, A. and D. Kahneman（1971）. Beliefin the law ofsmall numbers.
+Psychological Bulletin 76（2）, 105–110.
+
+     Tversky, A. and D. Kahneman（1973）. Availability: A heuristic for judging
+frequency and probability. Cognitive Psychology 5 （2）, 207–232.
+
+     Tversky, A. and D. Kahneman（1974）. Judgment under uncertainty: Heuristics and
+biases. Science 185（4157）, 1124–1131.
+
+     Tversky, A. and D. Kahneman（1992）. Advances in prospect theory: Cumulative
+representation of uncertainty. Journal of Risk and Uncertainty 5（4）, 297–323.
+
+    Ung, D. and P. Luk（2016）. What is in your smart beta portfolio?A fundamental and
+macroeconomic analysis. The Journal of Index Investing 7（1）, 49–77.
+
+     Wang, H., J. Yan, and J. Yu（2017）. Reference-dependent preferences and the risk-
+return trade-off. Journal of Financial Economics 123 （2）, 395–414.
+
+    Wang, Y. and A. Di Iorio（2007）. The cross section of expected stock returns in the
+Chinese A-share market. Global Finance Journal 17（3）, 335–349.
+
+    Wasserstein, R.L. and N.A. Lazar（2016）. The ASA statement on p-values:
+Context, process, and purpose. The American Statistician 70（2）, 129–133.
+
+    Watanabe, A., Y. Xu, T. Yao, and T. Yu（2013）. The asset growth effect: Insights
+from international equity markets. Journal of Financial Economics 108（2）, 529–563.
+
+     Welch, I. and A. Goyal（2008）. A comprehensive look at the empirical
+performance of equity premium prediction. Review of Financial Studies 21（4）, 1455–
+1508.
+
+     White, H. （1980）. A heteroskedasticity-consistent covariance matrix estimator and
+a direct test for heteroskedasticity. Econometrica 48（4）, 817–838.
+
+    White, H. （2000）. A reality check for data snooping. Econometrica 68（5）,
+1097–1126.
+
+     Xing, Y. （2008）. Interpreting the value effect through the q-theory: An empirical
+investigation. Review of Financial Studies 21 （4）, 1767–1795.
+
+    Xu, Y. and B.G. Malkiel（2004）. Idiosyncratic risk and security returns. AFA 2001

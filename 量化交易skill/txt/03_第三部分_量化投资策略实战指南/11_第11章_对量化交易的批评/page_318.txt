@@ -1,0 +1,36 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+的市场混乱时期，即1998年的夏天和2000~2002年的熊市，宽客表现
+
+抢眼。事实上，许多宽客在这两个时间段表现很好，其中一些人的业
+绩超过了历史水平。即使在1987年10月的大崩盘中，许多量化趋势跟
+
+踪的CTA基金表现出相当强势的收益。这并不是说它们对损失具有免
+疫力或者不被市场动荡所影响。重点在于，在考虑风险时，相对于更
+
+传统的市场甚至于对冲基金，宽客采用的是非常好的双重标准。
+
+
+[1] Scott Patterson，The Quants（New York：Crown Business，2010）.
+[2] 首先，维基百科中“美国房地产泡沫的原因”分析了监管方面和其
+他根源问题，“债务抵押债券”对与不良贷款相关的结构化产品进行了
+
+介绍。
+[3] 关于这个话题有趣的、技术性的初级读本是由Damiano Brigo提供
+的，其中伴随着宽客对任何金融工程师都应受到斥责的观点的辩论。
+在
+
+www1.mate.polimi.it/ingfin/document/Crisis_Models_Mip_16_giugno_2010_Brigo.pdf
+上可以找到相关文档。由Damiano Brigo，Andrea Pallavicini和Roberto
+Torresetti（Hoboken，NJ：John        Wiley&Sons，2010）编写的Credit
+Models and the Crisis：A Journey into CDOs，Copulas，Correlations
+
+and Dynamic Models，对这个问题进行了深入的研究。
+
+
+
+
+            专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

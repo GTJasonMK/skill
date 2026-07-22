@@ -1,0 +1,25 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+结这一说法的。这只是个买入卖出价差均为0的指令簿，这应该是想
+
+要进行鼓励的结果。
+[3] 这种软件通常称为Securities Information Processor（SIP）。很多美
+
+国股票交易所使用的特殊SIP，称为UQDF（UTP Quote Data Feed）。
+UTP是Unlisted Trading Priviledge的缩写，和纳斯达克交易所的股票代
+
+码有关。NYSE、AMEX以及美国其他一些区域性交易所的股票所使
+
+用的类似软件称为CQS（Consolidated Quote System）。
+[4] Matthew Philips，“Where Has All the Stock Trading Gone？”May
+
+10，2012，www.businessweek.com/articles/2012-05-10/where-has-all-
+the-stock-trading-gone#p1.
+
+
+
+
+             专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

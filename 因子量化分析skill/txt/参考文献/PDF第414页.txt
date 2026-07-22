@@ -1,0 +1,49 @@
+     Liu, Y., C. Shi, and X. Lian（2019）. Refined book-to-market ratio and the
+crosssection of stock returns in China. Southwestern University of Finance and
+Economics, Beijing Liangxin Investment Management Co. Ltd., Shenzhen China-Europe
+Rabbit Fund Management Co. Ltd. Available at: https://ssrn.com/abstract=3466909.
+
+     Lo, A.W. and A.C. MacKinlay（1990）. Data-snooping biases in tests offinancial
+asset pricing models. Review of Financial Studies 3 （3）, 431–467.
+
+     Lobo, M. S., M. Fazel, and S. Boyd（2007）. Portfolio optimization with linear
+andfixed transaction costs. Annals of Operations Research 152（1）, 341–365.
+
+    Lockwood, L. and W. Prombutr（2010）. Sustainable growth and stock returns.
+Journal of Financial Research 33 （4）, 519–538.
+
+     Loh, R.K. and M. Warachka（2012）. Streaks in earnings surprises and the
+crosssection of stock returns. Management Science 58（7）, 1305–1321.
+
+   Lopez de Prado, M. （2018）. Advances in Financial Machine Learning. Hoboken,
+New Jersey: John Wiley & Sons, Inc.
+
+     Loughran, T. and J.W. Wellman（2011）. New evidence on the relation between the
+enterprise multiple and average stock returns. Journal of Financial and Quantitative
+Analysis 46（6）, 1629–1650.
+
+   Lucas, R.E. （1978）. Asset prices in an exchange economy. Econometrica
+46（6）, 1429–1445.
+
+     Lyandres, E., L. Sun, and L. Zhang（2008）. The new issues puzzle: Testing the
+investment-based explanation. Review of Financial Studies 21（6）, 2825–2855.
+
+    Maillard, S., T. Roncalli, and J. Teïletche（2010）. The properties of equally
+weighted risk contribution portfolios. The Journal of Portfolio Management 36（4）,
+60–70.
+
+    Mandelbrot, B. （1966）. Forecasts offuture prices, unbiased markets,
+and“martingale"models. Journal of Business 39（1）, 242–255.
+
+    Markowitz, H. （1952）. Portfolio selection. Journal of Finance 7（1）, 77–91.
+
+     McCulloch, R. and P.E. Rossi（1991）. A Bayesian approach to testing the arbitrage
+pricing theory. Journal of Econometrics 49 （1-2）, 141–168.
+
+     McLean, R.D. and J. Pontiff（2016）. Does academic research destroy stock return
+predictability? Journal of Finance 71 （1）, 5–32.
+
+     Mei, J., J. Scheinkman, and W. Xiong（2005）. Speculative trading and stock
+prices: Evidence from Chinese A-B share premia. NBER Working Paper No. 11362.
+
+    Menchero, J. and B. Davis（2011）. Risk contribution is exposure times volatility

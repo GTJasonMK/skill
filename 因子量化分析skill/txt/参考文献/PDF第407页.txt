@@ -1,0 +1,49 @@
+application. AQR Capital Management, LLC.
+
+     Herskovic, B., B.T. Kelly, H. Lustig, and S.V. Nieuwerburgh（2016）. The common
+factor in idiosyncratic volatility: Quantitative asset pricing implications. Journal of
+Financial Economics 119（2）, 249–283.
+
+    Hirshleifer, D. （2001）. Investor psychology and asset pricing. Journal of Finance
+56（4）, 1533–1597. Hirshleifer, D. （2015）. Behavioralfinance. Annual Review of
+Financial Economics 7, 133–159.
+
+    Hirshleifer, D., K. Hou, and S.H. Teoh（2012）. The accrual anomaly: Risk or
+mispricing?Management Science 58（2）, 320–335.
+
+     Hirshleifer, D., K. Hou, S.H. Teoh, and Y. Zhang（2004）. Do investors overvalue
+firms with bloated balance sheets?Journal of Accounting and Economics 38, 297–331.
+
+     Hirshleifer, D., P. -H. Hsu, and D. Li（2013）. Innovative efficiency and stock
+returns. Journal of Financial Economics 107（3）, 632–654.
+
+     Hirshleifer, D. and D. Jiang（2010）. Afinancing-based misvaluation factor and the
+crosssection of expected returns. Review of Financial Studies 23（9）, 3401–3436.
+
+     Hirshleifer, D., S.S. Lim, and S.H. Teoh（2009）. Driven to distraction: Extraneous
+events and underreaction to earnings news. Journal of Finance 64（5）, 2289–2325.
+
+     Hirshleifer, D. and S.H. Teoh（2003）. Limited attention, information disclosure,
+and financial reporting. Journal of Accounting and Economics 36（1-3）, 337–386.
+
+     Hirshleifer, D., S.H. Teoh, and J.J. Yu（2011）. Short arbitrage, return asymmetry,
+and the accrual anomaly. Review of Financial Studies 24（7）, 2429–2461.
+
+    Holm, S. （1979）. A simple sequentially rejective multiple test procedure.
+Scandinavian Journal of Statistics 6（2）, 65–70.
+
+    Hon, M.T. and I. Tonks（2003）. Momentum in the UK stock market. Journal of
+Multinational Financial Management 13（1）, 43–70.
+
+    Hong, H., T. Lim, and J.C. Stein（2000）. Bad news travels slowly: Size, analyst
+coverage, and the profitability of momentum strategies. Journal of Finance 55（1）,
+265–295.
+
+     Hong, H. and J.C. Stein（1999）. A unified theory of underreaction, momentum
+trading, and overreaction in asset markets. Journal of Finance 54（6）, 2143–2184.
+
+    Hong, H. and J.C. Stein（2007）. Disagreement and the stock market. Journal of
+Economic Perspectives 21（2）, 109–128.
+
+     Hou, K. （2007）. Industry information diffusion and the lead-lag effect in stock
+returns. Review of Financial Studies 20（4）, 1113–1138.

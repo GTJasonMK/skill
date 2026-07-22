@@ -1,0 +1,6 @@
+[6]和“阿尔法因子”相对应，这种变量常被业界称作“风险因子”。
+
+[7]Chincarini and Kim（2006）介绍了包括Josef Lakonishok、Peter Lynch和Joseph Piotroski等30余位传奇基金经理
+的选股逻辑。
+
+[8]这也是为什么在式（7.1）中使用zit表示变量值。

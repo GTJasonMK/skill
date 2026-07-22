@@ -1,0 +1,4 @@
+[1]相关研究请参考Titman et al.（2009, 2010）、Li et al.（2012）、Watanabe et al.（2013）、Cakici（2015）、
+Fama and French（2017）及Kubota and Takehara（2018）。
+
+[2]这正是在3.5节讨论到的推定预期偏差。

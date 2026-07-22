@@ -1,0 +1,18 @@
+{
+  "pdf": "/home/fufu/Code/Skills/导演思维skill/The_Directors_Idea_-_The_Path_to_Great_Directing.pdf",
+  "backend": "pdftotext",
+  "total_pdf_pages": 371,
+  "start_page": 1,
+  "end_page": 371,
+  "pages_written": 371,
+  "out_dir": "/home/fufu/Code/Skills/导演思维skill/txt/00_pages",
+  "short_or_empty_pages": [
+    1,
+    2,
+    6,
+    101,
+    119,
+    331,
+    353
+  ]
+}

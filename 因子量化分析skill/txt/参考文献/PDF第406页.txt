@@ -1,0 +1,49 @@
+covariance matrices of generalized method of moments estimators. Journal of
+Econometrics 30（1-2）, 203–238.
+
+     Hansen, L. P., J. Heaton, and A. Yaron（1996）. Finite-sample properties of some
+alternative GMM estimators. Journal of Business & Economics Statistics 14（3）, 262–
+280.
+
+    Hansen, L.P. and R. Jagannathan（1991）. Implications of security market data for
+models ofdynamic economies. Journal of Political Economy 99（2）, 225–262.
+
+     Hansen, L.P. and R. Jagannathan（1997）. Assessing specification errors in
+stochastic discount factor models. Journal of Finance 52（2）, 557–590.
+
+     Hansen, L.P. and J.A. Scheinkman（1995）. Back to the future: Generating moment
+implications for continuous-time Markov processes. Econometrica 63（4）, 767–804.
+
+     Hansen, L.P. and K.J. Singleton（1982）. Generalized instrumental variables
+estimation of nonlinear rational expectations models. Econometrica 50（5）, 1269–
+1286.
+
+    Harvey, C.R. （2017）. Presidential address: The scientific outlook infinancial
+economics. Journal of Finance 72（4）, 1399–1440.
+
+    Harvey, C.R. and Y. Liu（2015）. Backtesting. The Journal of Portfolio
+Management 42（1）, 13–28. Harvey, C.R. and Y. Liu（2018）. Lucky factors. Duke
+University, Purdue University. Available at: https://ssrn.com/abstract=2528780.
+
+     Harvey, C. R., Y. Liu, and H. Zhu（2016）. . . . and the crosssection of expected
+returns. Review of Financial Studies 29（1）, 5–68.
+
+    Harvey, C.R. and A. Siddique（2000）. Conditional skewness in asset pricing tests.
+Journal of Finance 55（3）, 1263–1295.
+
+    Harvey, C.R. and G. Zhou（1990）. Bayesian inference in asset pricing. Journal of
+Financial Economics 26（2）, 221–254.
+
+    Hastie, T., R. Tibshirani, and J. Friedman（2016）. The Elements of Statistical
+Learning: Data Mining, Inference, and Prediction（2 ed. ）. New York, NY: Springer.
+
+    Haugen, R.A. and N.L. Baker（1996）. Commonality in the determinants of
+expected stock returns. Journal of Financial Economics 41 （3）, 401–439.
+
+    He, S. and G.G. Narayanamoorthy（2020）. Earnings acceleration and stock returns.
+Journal of Accounting and Economics forthcoming.
+
+     Head, A., G. Smith, and J. Wilson（2009）. Would a stock by any other ticker smell
+as sweet?The Quarterly Review of Economics and Finance 49（2）, 551–561.
+
+    Hedayati, S., B.K. Hurst, and E. Stamelos（2018）. Transactions costs: Practical

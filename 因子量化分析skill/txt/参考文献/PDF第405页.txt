@@ -1,0 +1,48 @@
+     Griffin, J.M. and M.L. Lemmon（2002）. Book-to-market equity, distress risk, and
+stock returns. Journal of Finance 57 （5）, 2317–2336.
+
+   Grinblatt, M. and B. Han（2005）. Prospect theory, mental accounting, and
+momentum. Journal of Financial Economics 78（2）, 311–339.
+
+     Grinblatt, M. and M. Keloharju（2009）. Sensation seeking, overconfidence, and
+trading activity. Journal of Finance 64 （2）, 549–578.
+
+     Grinold, R. and R.N. Kahn（1999）. Active Portfolio Management: A Quantitative
+Approach for Producing Superior Returns and Controlling Risk（2 ed. ）. New York,
+NY: McGraw-Hill Education. Grinold, R.C. （1994）. Alpha is volatility times IC times
+score. The Journal of Portfolio Management 20（4）, 9–16.
+
+    Grossman, S.J. and M.H. Miller（1988）. Liquidity and market structure. Journal of
+Finance 43（3）, 617–633.
+
+     Grossman, S.J. and R.J. Shiller（1981）. The determinants of the variability of
+stock market prices. American Economic Review 71 （2）, 222–227.
+
+     Gu, S., B.T. Kelly, and D. Xiu（2020）. Empirical asset pricing via machine
+learning. Review of Financial Studies 33（5）, 2223–2273.
+
+    Guo, B., W. Zhang, Y. Zhang, and H. Zhang（2017）. Thefive-factor asset pricing
+model tests for the Chinese stock market. Pacific-Basin Finance Journal 43, 84–106.
+
+     Guo, H. and R. Savickas（2010）. Relation between time-series and crosssectional
+effects of idiosyncratic variance on stock returns. Journal of Banking & Finance
+34（7）, 1637–1649.
+
+     Gupta, T. and B.T. Kelly（2019）. Factor momentum everywhere. The Journal of
+Portfolio Management 45（3）, 13–36.
+
+    Hahn, J. and H. Lee（2006）. Yield spreads as alternative risk factors for size and
+book-to-market. Journal of Financial and Quantitative Analysis 41 （2）, 245–269.
+
+    Han, Y., A. He, D.E. Rapach, and G. Zhou（2018）. Firm characteristics and
+expected stock returns. University of North Carolina, Saint Louis University, Washington
+University in St. Louis. Available at: https://ssrn.com/abstract=3185335.
+
+     Han, Y., G. Zhou, and Y. Zhu（2016）. A trend factor: Any economic gains from
+using information over investment horizons?Journal of Financial Economics 122（2）,
+352–375.
+
+     Hansen, L.P. （1982）. Large sample properties of generalized method of moments
+estimators. Econometrica 50（4）, 1029–1054.
+
+     Hansen, L.P. （1985）. A method for calculating bounds on the asymptotic

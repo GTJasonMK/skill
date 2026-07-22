@@ -1,0 +1,49 @@
+      Kopman, L. and S. Liu（2011）. Treatment offixed transaction costs in Barra
+optimizer. MSCI Barra Research Paper No. 2011-10. Available at:
+https://ssrn.com/abstract=1915219.
+
+    Kozak, S., S. Nagel, and S. Santosh（2018）. Interpreting factor models. Journal of
+Finance 73（3）, 1183–1223.
+
+      Kraus, A. and R.H. Litzenberger（1976）. Skewness preference andthe valuation of
+risk assets. Journal of Finance 31（4）, 1085–1100.
+
+    Kubota, K. and H. Takehara（2018）. Does the Fama and Frenchfive-factor model
+work wellin Japan? International Review of Finance 18 （1）, 137–146.
+
+       Kunz, B. and M. Mazzoleni（2018）. When value goes global. Research Affiliates,
+LLC.
+
+     La Porta, R. （1996）. Expectations and the crosssection of stock returns. Journal
+of Finance 51（5）, 1715–1742.
+
+     Lakonishok, J., A. Shleifer, and R.W. Vishny（1994）. Contrarian investment,
+extrapolation, and risk. Journal of Finance 49 （5）, 1541–1578.
+
+     Lam, F.Y. E.C. and K.C. J. Wei（2011）. Limits-to-arbitrage, investment frictions,
+and the asset growth anomaly. Journal of Financial Economics 102（1）, 127–149.
+
+     Lamoureux, C.G. and G.C. Sanger（1989）. Firm size and turn-of-the-year effects in
+the OTC/NASDAQ market. Journal of Finance 44（5）, 1219–1245.
+
+     Ledoit, O. and M. Wolf（2003）. Improved estimation of the covariance matrix of
+stock returns with an application to portfolio selection. Journal of Empirical Finance
+10（5）, 603–621.
+
+     Lee, B., J. O’Brien, and K. Sivaramakrishnan（2008）. An analysis offinancial
+analysts’optimisim in long-term growth forecasts. Journal of Behavioral Finance
+9（3）, 171–184.
+
+     Lee, C.M. C., A. Shleifer, and R.H. Thaler（1991）. Investor sentiment and the
+closed-end fund puzzle. Journal of Finance 46（1）, 75–109.
+
+    Lee, C.M. C. and E. So（2015）. Alphanomics: The Information Underpinnings of
+Market Efficiency. Now Publishers Inc.
+
+     Lee, C.M. C., S.T. Sun, R. Wang, and R. Zhang（2019）. Technological links and
+predictable returns. Journal of Financial Economics 132 （3）, 76–96.
+
+    Lee, C.M. C. and B. Swaminathan（2000）. Price momentum and trading volume.
+Journal of Finance 55（5）, 2017–2069.
+
+       Lee, D. H., M.K. Kim, and T.S. Kim（2016）. Abnormal trading volume and the

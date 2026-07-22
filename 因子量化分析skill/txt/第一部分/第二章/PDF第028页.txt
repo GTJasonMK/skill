@@ -1,0 +1,12 @@
+的内容既能够让读者暂时跳出细节，直观上理解公式的全貌，又能为读者提供足
+够的细节，从而在研究和实践因子投资中运用它们。本着这两个目标，文中涉及
+的数学会力争严谨，但也会做到“点到为止”。对某个方法感兴趣的读者，可以进
+一步学习相关章节给出的参考文献。
+[1]金融学领域公认的三大顶级期刊为Journal of Finance、Journal of Financial Economics以及Review of
+Financial Studies；经济学领域的顶级期刊包括American                  Economic     Review、Journal of  Economic
+Perspectives、Journal of Political Economy以及The Quarterly Journal of Economics等；会计学领域的顶级期
+刊包括Journal of Accounting and Economics、Journal of Accounting Research以及The Accounting Review等；
+投资业界的代表性期刊则要数The Journal of Portfolio Management。
+
+[2]Cochrane教授的原话是“The math in real, academic, finance is not actually that hard.Understanding how to
+use the equations, and see what they really mean about the world···that’s hard.”。

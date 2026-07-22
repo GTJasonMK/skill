@@ -1,0 +1,7 @@
+significance of FVIX is driven by a single outlier为题对Ang et al.（2006）进行了抨击，可谓相当“不客气”。不
+过在最后期刊发表的版本中，文章的题目In search of statistically valid risk factors则温和得多，而且三位作者
+还感谢了Ang et al.（2006）的四位作者对其早期版本的建设性评论。
+
+[2]这些变量衡量的是股票因噪声交易者行为导致的潜在错误定价，而非对真实错误定价程度的事后反映。
+
+[3]剩余协偏度的定义为资产的超额收益与市场超额收益平方的协方差。

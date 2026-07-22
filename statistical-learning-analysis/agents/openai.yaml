@@ -1,0 +1,4 @@
+interface:
+  display_name: "Statistical Learning Analysis"
+  short_description: "Plan rigorous statistical learning analyses"
+  default_prompt: "Use $statistical-learning-analysis to profile my data, choose suitable methods, explain the reasoning, and design validation."

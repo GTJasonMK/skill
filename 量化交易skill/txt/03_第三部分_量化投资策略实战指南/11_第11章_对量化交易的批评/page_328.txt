@@ -1,0 +1,26 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+而上的评估体系，没有有效的自上而下的证据表明大型宽客或者小型
+
+宽客谁更有优势。对经理的评估是我们下个章节会讨论到的话题。
+
+[1] 关于这个话题有趣的、技术性的初级读本是由Damiano Brigo提供
+
+的，其中伴随着宽客对任何金融工程师都应受到斥责的观点的辩论。
+在
+
+www1.mate.polimi.it/ingfin/document/Crisis_Models_Mip_16_giugno_2010_Brigo.pdf
+
+上可以找到相关文档。由Damiano Brigo，Andrea Pallavicini和Roberto
+Torresetti（Hoboken，NJ：John        Wiley&Sons，2010）编写的Credit
+Models and the Crisis：A Journey into CDOs，Copulas，Correlations
+
+and Dynamic Models，对这个问题进行了深入的研究。
+
+
+
+
+            专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

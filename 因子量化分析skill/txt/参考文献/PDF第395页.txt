@@ -1,0 +1,48 @@
+    Black, F., M.C. Jensen, and M. Scholes（1972）. The capital asset pricing model:
+Some empirical tests. In M.C. Jensen（Ed. ）, Studies in the Theory of Capital Markets.
+New York, NY: Praeger.
+
+    Black, F. and R. Litterman（1992）. Global portfolio optimization. Financial
+Analysts Journal48（5）, 28–43.
+
+    Blitz, D., M.X. Hanauer, and M. Vidojevic（2017）. The idiosyncratic momentum
+anomaly. Robeco Asset Management. Available at: https://ssrn.com/abstract=2947044.
+
+    Blitz, D., J. Huij, and M. Martens（2011）. Residual momentum. Journal of
+Empirical Finance 18（3）, 506–521.
+
+    Blume, M.E. （1970）. Portfolio theory: a step toward its practical application.
+Journal of Business 43（2）, 152–173.
+
+    Blume, M.E. and I. Friend（1973）. A new look at the capital asset pricing model.
+Journal of Finance 28（1）, 19–34.
+
+    Bodie, Z., A. Kane, and A.J. Marcus（2017）. Investments（11 ed. ）. New York,
+NY: McGraw-Hill Education.
+
+    Bonferroni, C.E. （1936）. Teoria Statistica Delle Classi e Calcolo Delle
+Probabilità. Florence, Italy: Libreria Internazionale Seeber.
+
+     Bonne, G., L. Roisenberg, R. Kouzmenko, and P. Zangari（2018）. MSCI integrated
+factor crowding model. MSCI Inc.
+
+    Bordalo, P., N. Gennaioli, R. La Porta, and A. Shleifer（2019）. Diagnostic
+expectations and stock returns. Journal of Finance 74（6）, 2839–2874.
+
+    Bowles, B., A.V. Reed, M. Ringgenberg, and J.R. Thornock（2019）. Anomaly time.
+Texas A & M University, University of North Carolina, University of Utah, Brigham Young
+University. Available at: https://ssrn.com/abstract=3069026.
+
+     Boyer, B.H. （2011）. Style-related comovement: Fundamentals of labels?Journal
+of Finance 66（1）, 307–332.
+
+    Boyer, B. H., T. Mitton, and K. Vorkink（2010）. Expectedidiosyncratic skewness.
+Review of Financial Studies 23（1）, 169–202.
+
+     Bradshaw, M. T., S.A. Richardson, and R.G. Sloan（2006）. The relation between
+corporatefinancing activities, analysts’forecasts and stock returns. Journal of Accounting
+and Economics 42（1-2）, 53–85. Breeden, D.T. （1979）. An intertemporal asset
+pricing model with stochastic consumption and investment opportunities. Journal of
+Financial Economics 7（3）, 265–296.
+
+     Brinson, G. P., B.D. Singer, and G.L. Beebower（1991）. Determinants of portfolio

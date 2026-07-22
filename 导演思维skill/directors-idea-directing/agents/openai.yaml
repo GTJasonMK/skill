@@ -1,0 +1,4 @@
+interface:
+  display_name: "Director's Idea Directing"
+  short_description: "Ken Dancyger based directing analysis and review workflow"
+  default_prompt: "Use $directors-idea-directing to analyze, apply, or source-check Ken Dancyger's director's idea framework."

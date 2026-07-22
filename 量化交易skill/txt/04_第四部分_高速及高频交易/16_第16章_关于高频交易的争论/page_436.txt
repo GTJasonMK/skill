@@ -1,0 +1,42 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+易在一些市场的出现大大缓解了日终操纵的频率和严重性，与媒体最
+
+近所表述的正好相反。与交易规则、监管、执行以及缩减频率和缓减
+日终操纵的严重性的合规条件相比，高频交易的影响更显著。我们的
+
+发现除了个别，对于日终操纵，包括但不限于期权到期日的不同测
+量，是稳健的。
+
+
+[1]
+
+http：//topics.nytimes.com/topics/reference/timestopics/subjects/h/high_frequency_algor
+September 26，2012.这篇文章将高速交易和高频交易进行合并。它混
+淆了原因与结果，混淆了与高频交易相关联的事情，制造了小茶杯里
+
+的大风浪（例如骑士资本近乎坍塌事件）。这是一篇相当陈旧的文
+章，我这么说因为有人喜欢《纽约时报》。
+[2] Manoj Narang，“What’s All the Fuss About High-Frequency Trading
+Cancellation Rates？，”www.institutionalinvestor.com，June 24，2010.
+
+[3] 本书英文版出版于2013年。—编者注
+[4] Manoj Narang，“What’s All the Fuss About High-Frequency Trading
+Cancellation Rates？，”www.institutionalinvestor.com，June 24，2010.
+[5] David Glovin and Christine Harper，“Goldman Trading-Code
+
+Investment Put at Risk by Theft（Update3），”www.bloomberg.com，
+July 6，2009.
+
+[6] Douglas Cumming，Feng Zhan，and Michael Aitken，“High
+Frequency Trading and End-of-Day Manipulation，”available at SSRN
+
+2145565September 12，2012.
+
+
+
+
+               专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

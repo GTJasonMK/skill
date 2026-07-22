@@ -1,0 +1,22 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+陈述对高频交易的各种争论，试图将事实从传说中分离出来。
+
+[1]     在本书的第四部分，概念性的、根据经验编写的重要贡献是由
+
+Manoj   Narang所做出的。但是，整个的写作是由里什·纳兰完成的，
+
+这里所包含的观点仅代表他本人。
+[2] David Glovin and Christine Harper，“Goldman TradingϋCode
+
+Investment Put at Risk By Theft，”Blooomberg.com，July 6，2009.
+
+[3] Aite Group estimate，September 2012.Figures for 2012 are estimates.
+
+
+
+
+             专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

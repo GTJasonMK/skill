@@ -1,0 +1,48 @@
+for NYSE common stocks: Further evidence. Journal of Financial Economics 12（1）,
+129–156.
+
+    Bayraktar, M. K., S. Doole, A. Kassam, and S. Radchenko（2015）. Lost in the
+crowd?Identifying and measuring crowded strategies and trades. MSCI Inc.
+
+    Bender, J., P.B. Hammond, and W. Mok（2014）. Can alpha be capŋtured by risk
+premia?The Journal of Portfolio Management 40（2）, 18–29.
+
+     Bender, J., J. -H. Lee, and D. Stefek（2009）. Refining portfolio construction when
+alphas and risk factors are misaligned. MSCI Inc.
+
+      Bender, J., X. Sun, R. Thomas, and V. Zdorovtsov（2018）. The promises and
+pitfalls offactor timing. The Journal of Portfolio Management 44 （4）, 79–92.
+
+     Bender, J. and T. Wang（2016）. Can the whole be more than the sum of the parts?
+Bottom-up versus top-down multifactor portfolio construction. The Journal of Portfolio
+Management 42（5）, 39–50.
+
+     Beneish, M. D., C.M. C. Lee, and D.C. Nichols（2015）. In short supply: Short-
+sellers and stock returns. Journal of Accounting and Economics 60（2-3）, 33–57.
+
+     Benjamini, Y. and Y. Hochberg（1995）. Controlling the false discovery rate: A
+practical and powerful approach to multiple testing. Journal of the Royal Statistical
+Society, Series B 57（1）, 289–300.
+
+     Benjamini, Y. and D. Yekutieli（2001）. The control of the false discovery rate in
+multiple testing under dependency. The Annals of Statistics 29（4）, 1165–1188.
+
+     Berk, J.B. （1995）. A critique of size-related anomalies. Review of Financial
+Studies 8（2）, 275–286. Berk, J. B., R.C. Green, and V. Naik（1999）. Optimal
+investment, growth options, and security returns. Journal of Finance 54（5）, 1553–
+1607.
+
+     Bernard, V.L. and J.K. Thomas（1989）. Post-earnings-announcement drift: Delayed
+price response or risk premium?Journal of Accounting Research 27, 1–36.
+
+     Bernard, V.L. and J.K. Thomas（1990）. Evidence that stock prices do not fully
+reflect the implications of current earnings for future earnings. Journal of Accounting and
+Economics 13（4）, 305–340. Bhandari, L.C. （1988）. Debt/equity ratio and expected
+common stock returns: Empirical evidence. Journal of Finance 43 （2）, 507–528.
+
+     Bhootra, A. and J. Hur（2012）. On the relationship between concentration of
+prospect theory/mental accounting investors, cointegration, and momentum. Journal of
+Banking & Finance 36（5）, 1266–1275. Black, F. （1972）. Capital market
+equilibrium with restricted borrowing. Journal of Business 45（3）, 444–455.
+
+     Black, F. （1986）. Noise. Journal of Finance 41（3）, 528–543.

@@ -1,0 +1,32 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+反应。首先并最合适的反馈是做出愚蠢交易的人会损失资金（例如，
+
+骑士资本）。他们也同样要对投资者进行反馈。考虑到缺乏其他有效
+的选择方式，这种自然的惩罚方式，加上任何必需的事后强制措施，
+
+看上去是非常合理的。
+
+[1] Louise Story and Graham Bowley，“Market Swings Are Becoming
+
+New    Standard，”New       York     Times，September     11，2011，
+
+www.nytimes.com.
+[2] Manoj Narang，“HFT Is NOT Responsible for Market Volatility——
+You Areʽ”September 15，2011，www.highfrequencytraders.com.
+
+[3] Jason Zweig，“Back to the Future：Lessons From the Forgotten‘Flash
+Crash’s of 1962，”online.wsj.com，May 29，2010.
+[4] Marcy Gordon and Daniel Wagner，“‘Flash Crash？Report：
+Waddell&Reed’s     $4.1   Billion   Trade   Blamed     for   Market
+
+Plunge，”www.huffingtonpost.com，October                   1，2010，
+www.huffingtonpost.com.
+
+
+
+
+             专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

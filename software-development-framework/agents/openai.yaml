@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Development Framework"
+  short_description: "Reusable architecture workflow for Codex"
+  default_prompt: "Use $software-development-framework to plan, implement, review, and verify this application change with decision gates for reuse, redundancy, coupling, and extensibility."

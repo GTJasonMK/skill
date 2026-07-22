@@ -1,0 +1,49 @@
+times correlation: Decomposing risk using the x-sigma-rho formula. The Journal of
+Portfolio Management 37（2）, 97–106.
+
+     Menchero, J. and J. -H. Lee（2015）. Efficiently combining multiple sources of
+alpha. Journal of Investment Management 13（4）, 71–86.
+
+    Menchero, J., D.J. Orr, and J. Wang（2011）. The Barra US equity model（USE4）
+methodology notes. MSCI Inc.
+
+   Menchero, J., J. Wang, and D.J. Orr（2011）. Eigen-adjusted covariance matrices.
+MSCI Inc.
+
+   Menkhoff, L., L. Sarno, M. Schmeling, and A. Schrimpf（2012）. Currency
+momentum strategies. Journal of Financial Economics 106 （3）, 660–684.
+
+    Merton, R.C. （1972）. An analytic derivation of the efficient portfolio frontier.
+Journal of Financial and Quantitative Analysis 7（4）, 1851–1872.
+
+     Merton, R.C. （1973）. An intertemporal capital asset pricing model. Econometrica
+41（5）, 867–887. Miller, M.H. and F. Modigliani（1961）. Dividend policy, growth,
+and the valuation of shares. Journal of Business 34（4）, 411–433.
+
+     Modigliani, F. and M.H. Miller（1958）. The cost of capital, corporationfinance
+and the theory of investment. American Economic Review 48（3）, 261–297.
+
+    Mohanram, P.S. （2005）. Separating winners from losers among low-book-to-
+market stocks using financial statement analysis. Review of Accounting Studies 10（2-
+3）, 133–170.
+
+    Moskowitz, T.J. and M. Grinblatt（1999）. Do industries explain momentum? nance
+54 （4）, 1249–1290. Journal of Finance 54 （4）, 1249-1290.
+
+    Mossin, J. （1966）. Equilibrium in a capital asset market. Econometrica 34（4）,
+768–783.
+
+    MSCI（2014）. MSCI quality indexes methodology. MSCI Inc.
+
+      Narayan, P. K., H.A. Ahmed, and S. Narayan（2015）. Do momentum-based trading
+strategies work in the commodity futures markets?Journal of Futures Markets 35（9）,
+868–891.
+
+     Newey, W.K. and K.D. West（1987）. A simple, positive semi-definite,
+heteroskedasticity and autocorrelation consistent covariance matrix. Econometrica
+5（3）, 703–708.
+
+     Newey, W.K. and K.D. West（1994）. Automatic lag selection in covariance matrix
+estimation. Review of Economic Studies 61 （4）, 631–653.
+
+    Nissim, D. and S.H. Penman（2001）. Ratio analysis and equity valuation: From

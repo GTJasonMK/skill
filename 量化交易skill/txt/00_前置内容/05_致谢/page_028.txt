@@ -1,0 +1,42 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+                          致谢
+
+    非常感激我的兄弟Manoj Narang对于本书第四部分给予的帮助，
+
+感恩Mani Mahjouri提供的许多建议和帮助。感谢迈克·贝勒和Dmitry
+Sarkisov对信息微爆发提出的具有启发性的观点。我在T2AM的同事
+
+Myong Han、Yimin Guo、Huang Pan和Julie Wilson通读了本书的不同
+
+部分，给出了许多有价值的建议。如果没有编辑Arzhang Kamarei不
+知疲倦的工作，这本书的可读性将会大打折扣。本书的第1版也是由
+
+Arzhang Kamarei帮助编辑校对的。
+
+
+    我必须感谢我在T2AM的同伴Eric Cressman、John Cutsinger和
+Elizabeth Castro的帮助。
+
+
+    我在量化交易领域学到了许多知识，应该感谢许多朋友和机构的
+帮助，它们是新际集团（Newedge）的Chris Kennedy和Ryan
+Duncan，艾特集团的Sang Lee以及巴克莱集团。除非另有说明，书中
+的基础数据来自YAHOO金融和彭博。
+
+
+    自2009年信息技术及广播局（ITBB）出现后，我对于很多人和
+
+很多机构的帮助表示感激，它们是新际集团（尤其是Keith Johnson、
+Leslie Richman、Brian Walls、Galen Burghardt和Isabelle Lixi）、美林
+
+证券（尤其是Michael Lynch、Lisa Conde、Tim Cox和Omer
+Corluhan）、摩根士丹利（尤其是Michael Meade）、芝加哥商业交易
+
+所（尤其是Kelly Brown）。
+
+
+           专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

@@ -1,0 +1,49 @@
+     Daniel, K.D. and S. Titman（1997）. Evidence on the characteristics of cross
+sectional variation in stock returns. Journal of Finance 52（1）, 1–33.
+
+     Daniel, K.D. and S. Titman（2006）. Market reactions to tangible and intangible
+information. Journal of Finance 61（4）, 1605–1643.
+
+     Daniel, K. D., S. Titman, and K.C. J. Wei（2001）. Explaining the crosssection of
+stock returns in Japan: Factors or characteristics?Journal of Finance 56（2）, 743–766.
+
+     Datar, V. T., N.Y. Naik, and R. Radcliffe（1998）. Liquidity and stock returns: An
+alternative test. Journal of Financial Markets 1 （2）, 203–219.
+
+     Davis, J. L., E.F. Fama, and K.R. French（2000）. Characteristics, covariances, and
+average returns: 1929 to 1997. Journal of Finance 55（1）, 389–406.
+
+    De Bondt, W.F. M. and R.H. Thaler（1985）. Does the stock market overreact?
+Journal of Finance 40（3）, 793–805.
+
+      De Groot, W., J. Pang, and L. Swinkels（2012）. The crosssection of stock returns
+in frontier emerging markets. Journal of Empirical Finance 19（5）, 796–818.
+
+     De Long, J. B., A. Shleifer, L.H. Summers, and R.J. Waldmann（1990）. Noise
+trader riskinfinancial markets. Journal of Political Economy 98（4）, 703–738.
+
+    Dechow, P. M., R.G. Sloan, and A.P. Sweeney（1995）. Detecting earnings
+management. The Accounting Review 70（2）, 193–225.
+
+    DellaVigna, S. and J.M. Pollet（2007）. Demographics and industry returns.
+American Economic Review 70（2）, 193–225.
+
+    DellaVigna, S. and J.M. Pollet（2009）. Investor inattention and Friday earnings
+announcements. Journal of Finance 64 （2）, 709–749.
+
+     DeMiguel, V., L. Garlappi, and R. Uppal（2009）. Optimal versus naive
+diversification: How inefficient is the 1/N portfolio strategy?Review of Financial Studies
+22（5）, 1915–1953.
+
+    Dey, M.K. （2005）. Turnover and return in global stock markets. Emerging
+Markets Review 6（1）, 45–67.
+
+     Dichev, I.D. （1998）. Is the riskofbankruptcy a systematic risk?Journal of Finance
+53（3）, 1131–1147. Dichev, I.D. and V.W. Tang（2009）. Earnings volatility and
+earnings predictability. Journal of Accounting and Economics 47（1-2）, 160–181.
+
+    Dichtl, H., W. Drobetz, and V. -S. Wendt（2020）. How to build a factor portfolio:
+Does the allocation strategy matter?European Financial Management forthcoming.
+
+     Diebold, F.X. and R.S. Mariano（2002）. Comparing predictive accuracy. Journal
+of Business & Economic Statistics 20（1）, 134–144.

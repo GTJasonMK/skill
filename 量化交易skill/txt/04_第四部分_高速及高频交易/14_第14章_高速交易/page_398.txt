@@ -1,0 +1,26 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+助基金转移到进行被动式ETF的交易，尤其由于ETF比较便宜，这个
+
+缺口已经变窄。
+[3] 值得注意的是，纽约是我们与美国股票市场连接的城市，与股票
+
+交易所相关的数据中心实际上大都驻扎在芝加哥。
+[4] Melissa Harris，“Some High-Speed Traders Convinced Microwave
+
+Dishes Serve Up Bigger Returns，”chicagotribune.com，August 19，
+
+2012.
+[5] Jerry Adler，“Raging Bulls：How Wall Street Got Addicted to Light-
+
+Speed Trading，”wired.com，August 3，2012.
+[6] Matthew Philips，“Stock Trading Is About to Get 5.2 Milliseconds
+Faster，”bloomberg.com，March 29，2012.
+
+
+
+
+             专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

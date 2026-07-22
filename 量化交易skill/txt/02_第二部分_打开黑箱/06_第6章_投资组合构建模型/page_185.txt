@@ -1,0 +1,43 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+       当然，使用优化工具来构建投资组合的资深宽客中，使用最简单
+
+的优化工具（尤其是无约束优化）的只是少数。尽管优化方法背后隐
+藏的意图是很清楚的，但所使用的技术本身是量化交易系统中最适合
+
+被冠以黑箱之名的部分。由于阿尔法模型、风险模型、交易成本模型
+以及头寸限制、所期望的风险水平等之间复杂的交互作用，相对于输
+
+入变量而言，优化工具的输出有时很令人困惑。我们不得不考虑阿尔
+
+法模型内部不同种类的阿尔法要素间的交互作用，进一步加剧了这种
+复杂性。换句话说，具有最高期望收益的产品在投资组合中很可能会
+
+具有较大的头寸。具有与阿尔法模型预测方向相反的头寸，这种奇怪
+的现象通常都出现在投资组合中具有较小头寸的产品上，因为考虑到
+交易成本或风险管理的重要性高于其期望收益。
+
+
+       最后一种现象有时被称为替代效应。如果预测ABC的收益要高于
+DEF，我们希望在投资组合中能反映出这一点。但是如果ABC的预期
+
+交易成本要昂贵很多，而同时ABC和DEF的相关性又很好，优化工具
+可能会选择投资于DEF，而不是ABC。
+
+
+[1] Harry Markowitz，“Portfolio Selection，”Journal of Finance 7，
+no.1（March1952）：77–91.
+[2]    Tim       Bollerslev，“Generalized    Autoregressive     Conditional
+
+Heteroskedasticity，”Journal of Econometrics 31（June 1986）：307–
+327.
+[3]    Fischer    Black   and    Robert    Litterman，“Global     Portfolio
+
+Optimization，”Financial         Analysts     Journal（September–October
+
+
+
+                 专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

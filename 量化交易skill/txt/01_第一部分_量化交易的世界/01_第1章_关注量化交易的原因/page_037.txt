@@ -1,0 +1,31 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+November（Update3），”Bloomberg.com，December 7，2007.
+
+[2]     Gregory      Zuckerman，Jenny     Strasburg，and     Peter
+Lattman，“Renaissance Waives Fees on Fund That Gave Up 12%，”Wall
+
+Street Journal Online，January 5，2009.
+[3] Lisa Kassenaar and Christine Harper，“Goldman Sachs Paydays
+
+Suffer on Lost Leverage with Fed Scrutiny，”Bloomberg.com，October
+
+21，2008.
+[4] Sang Lee，“New World Order：The High Frequency Trading
+
+Community and Its Impact on Market Structure，”The Aite Group，
+February 2009.
+[5] Peter Starck，“Black Box Trading Has Huge Potential——
+
+D.Boerse，”Reuters.com，June 13，2008.
+[6]     Terry      Hendershott，Charles   M.Jones，and      Albert
+J.Menkveld，“Does Algorithmic Trading Improve Liquidity？”WFA
+Paper，April 26，2008.
+
+
+
+
+                专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

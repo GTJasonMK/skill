@@ -1,0 +1,16 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+   对于第2版，我感谢Philip Palmedo、Brent Boyer、Aaron Brown和
+
+Werner Krebs提出的建设性的批评意见，使得这本书进一步得以改
+善，也很感谢Pankaj Patel、Dave DeMers、John Burnell、John Fidler
+
+和Camille Hayek对各种新内容的帮助。
+
+
+
+
+           专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

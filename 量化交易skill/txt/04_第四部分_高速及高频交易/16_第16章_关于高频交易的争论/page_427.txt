@@ -1,0 +1,14 @@
+ 实时行情接口：ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ （覆盖Ａ股、港股、美股、外汇、期货、加密货币）
+
+
+
+
+[1]   Charles    Duhigg，“Stock      Traders   Find       Speed   Pays，in
+
+Milliseconds，”www.nytimes.com，July 23，2009.
+[2] http：//sec.gov/litigation/admin/2012/34-67857.pdf.
+
+
+
+
+                专为量化交易设计的实时行情接口： ｗｗｗ．ｉｎｆｏｗａｙ．ｉｏ

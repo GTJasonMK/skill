@@ -1,0 +1,48 @@
+     Farcomeni, A. （2008）. A review of modern multiple hypothesis testing, with
+particular attention to the false discovery proportion. Statistical Methods in Medical
+Research 17（4）, 347–388.
+
+     Fergis, K., K. Gallagher, P. Hodges, and K. Hogan（2019）. Defensive factor
+timing. The Journal of Portfolio Management 45（3）, 50–68.
+
+    Fisher, R.A. （1925）. Statistical Methods for Research Workers. Edinburgh:
+Oliver and Boyd Ltd.
+
+     Foster, F. D., T. Smith, and R.E. Whaley（1997）. Assessing goodness-of-fit of asset
+pricing models: The distribution of the maximal R2. Journal of Finance 52（2）, 591–
+607.
+
+     Foster, G. （1977）. Quarterly accounting data: Time-series properties and
+predictive-ability results. The Accounting Review 52 （1）, 1–21.
+
+    Foster, G., C. Olsen, and T. Shevlin（1984）. Earnings releases, anomalies, andthe
+behavior of security returns. The Accounting Review 59（4）, 574–604.
+
+     Frankel, R. and C.M. C. Lee（1998）. Accounting valuation, market expectation,
+and crosssectional stock returns. Journal of Accounting and Economics 25（3）, 283–
+319.
+
+    Frankel, R. and L. Litov（2009）. Earnings persistence. Journal of Accounting and
+Economics 47（1-2）, 182–190.
+
+    Frazzini, A. （2006）. The disposition effect and underreaction to news. Journal of
+Finance 61（4）, 2017–2046.
+
+    Frazzini, A., D.G. Kabiller, and L.H. Pedersen（2018）. Buffett’s alpha. Financial
+Analysts Journal 74（4）, 35–55.
+
+    Frazzini, A. and L.H. Pedersen（2014）. Betting against beta. Journal of Financial
+Economics 111（1）, 1–25.
+
+     Froot, K.A. and E.M. Dabora（1999）. How are stock prices affected by the
+location oftrade?Journal of Financial Economics 53（2）, 189–216.
+
+    Fu, F. （2009）. Idiosyncratic risk and the crosssection of expected stock returns.
+Journal of Financial Economics 91（1）, 24–37.
+
+     Gan, C., B. Hu, Y.G. Liu, and Z. Li（2013）. An empirical crosssection analysis of
+stock returns on the Chinese A-share stock market. Investment Management and
+Financial Innovations 10（1）, 127–136.
+
+    Geczy, C.C. and M. Samonov（2016）. Two centuries of price-return momentum.
+Financial Analysts Journal 72（5）, 32–56.
