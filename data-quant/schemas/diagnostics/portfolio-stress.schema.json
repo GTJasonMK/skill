@@ -1,0 +1,106 @@
+{
+  "$defs": {
+    "StressScenario": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_shocks": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "minProperties": 1,
+          "title": "Asset Shocks",
+          "type": "object"
+        },
+        "cash_shock": {
+          "default": 0.0,
+          "title": "Cash Shock",
+          "type": "number"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "asset_shocks"
+      ],
+      "title": "StressScenario",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "confidence": {
+      "default": 0.95,
+      "exclusiveMaximum": 1,
+      "exclusiveMinimum": 0.5,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "label": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Label"
+    },
+    "loss_limit": {
+      "default": 0.1,
+      "exclusiveMinimum": 0,
+      "title": "Loss Limit",
+      "type": "number"
+    },
+    "return_basis": {
+      "anyOf": [
+        {
+          "enum": [
+            "gross",
+            "excess"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Return Basis"
+    },
+    "scenarios": {
+      "items": {
+        "$ref": "#/$defs/StressScenario"
+      },
+      "minItems": 1,
+      "title": "Scenarios",
+      "type": "array"
+    },
+    "weight_type": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Weight Type"
+    }
+  },
+  "required": [
+    "scenarios"
+  ],
+  "title": "PortfolioStressParameters",
+  "type": "object",
+  "x-diagnostic-id": "portfolio-stress",
+  "x-manifest-stage": "risk"
+}

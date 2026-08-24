@@ -1,0 +1,4 @@
+interface:
+  display_name: "Futures Quant Analysis"
+  short_description: "期货合约、换月、基差、保证金与回测审计"
+  default_prompt: "Use $futures-quant-analysis to define the contract lifecycle, construct a point-in-time roll rule, and audit actual-contract PnL, costs, margin, and risk."

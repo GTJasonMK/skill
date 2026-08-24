@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Timestamped bid/ask snapshots for deterministic offline execution replay.",
+  "properties": {
+    "ask": {
+      "type": "number",
+      "x-unit": "price"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "number",
+      "x-unit": "price"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "number",
+      "x-unit": "quantity"
+    }
+  },
+  "required": [
+    "timestamp",
+    "asset_id",
+    "bid",
+    "ask",
+    "volume",
+    "currency",
+    "venue"
+  ],
+  "title": "market_quotes",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "timestamp",
+    "asset_id",
+    "venue"
+  ],
+  "x-timestamp-fields": [
+    "timestamp"
+  ]
+}

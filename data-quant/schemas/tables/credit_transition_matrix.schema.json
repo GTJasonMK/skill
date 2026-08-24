@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT rating-transition probabilities including an explicit default state.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "from_rating": {
+      "type": "string"
+    },
+    "horizon_years": {
+      "type": "number"
+    },
+    "matrix_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "probability": {
+      "type": "number"
+    },
+    "to_rating": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "matrix_id",
+    "observed_at",
+    "available_at",
+    "horizon_years",
+    "from_rating",
+    "to_rating",
+    "probability"
+  ],
+  "title": "credit_transition_matrix",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "matrix_id",
+    "observed_at",
+    "from_rating",
+    "to_rating"
+  ],
+  "x-timestamp-fields": [
+    "observed_at",
+    "available_at"
+  ]
+}

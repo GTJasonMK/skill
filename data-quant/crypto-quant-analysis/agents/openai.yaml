@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crypto Quant Analysis"
+  short_description: "加密现货/永续、资金费率、清算、交易所与链上数据审计"
+  default_prompt: "Use $crypto-quant-analysis to define venue-specific instruments and timing, reconcile funding and margin PnL, and audit liquidation, outage, liquidity, and counterparty risks."

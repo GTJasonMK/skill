@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Offline approvals for source-card refresh, add, or retire requests.",
+  "properties": {
+    "action": {
+      "type": "string"
+    },
+    "approved_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "approver": {
+      "type": "string"
+    },
+    "requested_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_id",
+    "requested_at",
+    "approved_at",
+    "approver",
+    "action",
+    "status"
+  ],
+  "title": "source_change_approvals",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "source_id",
+    "approved_at",
+    "action"
+  ],
+  "x-timestamp-fields": [
+    "requested_at",
+    "approved_at"
+  ]
+}

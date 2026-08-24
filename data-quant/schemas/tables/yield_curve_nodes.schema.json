@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time zero-rate curve nodes with explicit compounding and currency.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "compounding": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "curve_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "tenor_years": {
+      "type": "number"
+    },
+    "zero_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "curve_id",
+    "observed_at",
+    "available_at",
+    "tenor_years",
+    "zero_rate",
+    "currency",
+    "compounding"
+  ],
+  "title": "yield_curve_nodes",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "curve_id",
+    "observed_at",
+    "tenor_years"
+  ],
+  "x-timestamp-fields": [
+    "observed_at",
+    "available_at"
+  ]
+}

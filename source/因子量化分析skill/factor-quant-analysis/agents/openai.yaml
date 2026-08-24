@@ -1,0 +1,4 @@
+interface:
+  display_name: "Factor Quant Analysis"
+  short_description: "A-share factor strategy design and audits"
+  default_prompt: "Use $factor-quant-analysis to design, audit, or iterate an A-share factor strategy."

@@ -1,0 +1,259 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "allow_broken_date_interpolation": {
+      "default": false,
+      "title": "Allow Broken Date Interpolation",
+      "type": "boolean"
+    },
+    "base_calendar_id": {
+      "minLength": 1,
+      "title": "Base Calendar Id",
+      "type": "string"
+    },
+    "base_currency": {
+      "maxLength": 3,
+      "minLength": 3,
+      "title": "Base Currency",
+      "type": "string"
+    },
+    "base_rate": {
+      "title": "Base Rate",
+      "type": "number"
+    },
+    "base_rate_ask": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Base Rate Ask"
+    },
+    "base_rate_bid": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Base Rate Bid"
+    },
+    "cls_cutoff_utc": {
+      "anyOf": [
+        {
+          "minLength": 4,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cls Cutoff Utc"
+    },
+    "cls_member_venues": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Cls Member Venues",
+      "type": "array"
+    },
+    "cross_currency_basis_bps": {
+      "default": 0.0,
+      "title": "Cross Currency Basis Bps",
+      "type": "number"
+    },
+    "deviation_tolerance_bps": {
+      "default": 5.0,
+      "minimum": 0,
+      "title": "Deviation Tolerance Bps",
+      "type": "number"
+    },
+    "enforce_cls_cutoff": {
+      "default": false,
+      "title": "Enforce Cls Cutoff",
+      "type": "boolean"
+    },
+    "forward_venue": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Forward Venue"
+    },
+    "maximum_funding_notional": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maximum Funding Notional"
+    },
+    "nostro_capacity_base": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Nostro Capacity Base"
+    },
+    "notional_base": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Notional Base",
+      "type": "number"
+    },
+    "quote_calendar_id": {
+      "minLength": 1,
+      "title": "Quote Calendar Id",
+      "type": "string"
+    },
+    "quote_currency": {
+      "maxLength": 3,
+      "minLength": 3,
+      "title": "Quote Currency",
+      "type": "string"
+    },
+    "quote_rate": {
+      "title": "Quote Rate",
+      "type": "number"
+    },
+    "quote_rate_ask": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Quote Rate Ask"
+    },
+    "quote_rate_bid": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Quote Rate Bid"
+    },
+    "replacement_evaluated_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Replacement Evaluated At"
+    },
+    "require_replacement_cost": {
+      "default": false,
+      "title": "Require Replacement Cost",
+      "type": "boolean"
+    },
+    "settlement_fail_lgd": {
+      "default": 1.0,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Settlement Fail Lgd",
+      "type": "number"
+    },
+    "settlement_fail_loss_limit": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Settlement Fail Loss Limit"
+    },
+    "settlement_fail_probability": {
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Settlement Fail Probability",
+      "type": "number"
+    },
+    "settlement_lag_business_days": {
+      "default": 2,
+      "minimum": 0,
+      "title": "Settlement Lag Business Days",
+      "type": "integer"
+    },
+    "settlement_side": {
+      "default": "buy_base",
+      "enum": [
+        "buy_base",
+        "sell_base"
+      ],
+      "title": "Settlement Side",
+      "type": "string"
+    },
+    "spot_venue": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Spot Venue"
+    },
+    "tenor_days": {
+      "minimum": 1,
+      "title": "Tenor Days",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "base_currency",
+    "quote_currency",
+    "base_calendar_id",
+    "quote_calendar_id",
+    "base_rate",
+    "quote_rate",
+    "tenor_days"
+  ],
+  "title": "FXForwardCheckParameters",
+  "type": "object",
+  "x-diagnostic-id": "fx-forward-check",
+  "x-manifest-stage": "research"
+}

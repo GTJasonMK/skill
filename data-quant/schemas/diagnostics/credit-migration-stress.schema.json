@@ -1,0 +1,123 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "default_probability_multiplier": {
+      "default": 1.0,
+      "minimum": 1,
+      "title": "Default Probability Multiplier",
+      "type": "number"
+    },
+    "default_rating": {
+      "default": "D",
+      "minLength": 1,
+      "title": "Default Rating",
+      "type": "string"
+    },
+    "evaluated_at": {
+      "minLength": 1,
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "loss_limit_fraction": {
+      "default": 0.05,
+      "exclusiveMinimum": 0,
+      "title": "Loss Limit Fraction",
+      "type": "number"
+    },
+    "matrix_id": {
+      "minLength": 1,
+      "title": "Matrix Id",
+      "type": "string"
+    },
+    "migration_correlation": {
+      "default": 0.0,
+      "exclusiveMaximum": 1,
+      "minimum": 0,
+      "title": "Migration Correlation",
+      "type": "number"
+    },
+    "portfolio_id": {
+      "minLength": 1,
+      "title": "Portfolio Id",
+      "type": "string"
+    },
+    "rating_liquidity_bps": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Rating Liquidity Bps",
+      "type": "object"
+    },
+    "rating_spreads_bps": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "minProperties": 1,
+      "title": "Rating Spreads Bps",
+      "type": "object"
+    },
+    "realized_default_settlement_fraction": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Realized Default Settlement Fraction"
+    },
+    "recovery_confidence": {
+      "default": 0.95,
+      "exclusiveMaximum": 1,
+      "exclusiveMinimum": 0.5,
+      "title": "Recovery Confidence",
+      "type": "number"
+    },
+    "recovery_volatility": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Recovery Volatility",
+      "type": "number"
+    },
+    "row_sum_tolerance": {
+      "default": 1e-08,
+      "exclusiveMinimum": 0,
+      "title": "Row Sum Tolerance",
+      "type": "number"
+    },
+    "tail_confidence": {
+      "default": 0.99,
+      "exclusiveMaximum": 1,
+      "exclusiveMinimum": 0.5,
+      "title": "Tail Confidence",
+      "type": "number"
+    },
+    "tail_loss_limit_fraction": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Tail Loss Limit Fraction"
+    }
+  },
+  "required": [
+    "portfolio_id",
+    "matrix_id",
+    "evaluated_at",
+    "rating_spreads_bps"
+  ],
+  "title": "CreditMigrationParameters",
+  "type": "object",
+  "x-diagnostic-id": "credit-migration-stress",
+  "x-manifest-stage": "risk"
+}

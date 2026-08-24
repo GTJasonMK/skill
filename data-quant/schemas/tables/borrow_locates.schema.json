@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time short-borrow locate quantities, fees, expiries, and recalls.",
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "expires_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "fee_rate_annual": {
+      "type": "number",
+      "x-unit": "decimal_rate"
+    },
+    "lender_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "locate_id": {
+      "type": "string"
+    },
+    "located_quantity": {
+      "type": "number",
+      "x-unit": "shares"
+    },
+    "recalled_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "remaining_quantity": {
+      "type": "number",
+      "x-unit": "shares"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "locate_id",
+    "asset_id",
+    "available_at",
+    "effective_from",
+    "expires_at",
+    "located_quantity",
+    "remaining_quantity",
+    "fee_rate_annual",
+    "currency",
+    "status"
+  ],
+  "title": "borrow_locates",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "locate_id",
+    "available_at"
+  ],
+  "x-timestamp-fields": [
+    "available_at",
+    "effective_from",
+    "expires_at",
+    "recalled_at"
+  ]
+}

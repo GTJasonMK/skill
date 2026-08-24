@@ -1,0 +1,17 @@
+schema_version: "1.0"
+source_id: official-venue-product-rules
+publisher: Exchange product specification boundary
+url: https://www.cmegroup.com/rulebook.html
+accessed_at: "2026-08-15T12:41:53Z"
+effective_from: "2026-08-15"
+effective_to: null
+retrieval:
+  status: metadata_only
+claims:
+  - claim_id: venue-product-rules-need-effective-spec
+    summary: Product-level exchange rules (tick, hours, delivery, position limits) are venue- and contract-specific and cannot be inferred from a generic futures contract table.
+    implementation_use: Fail closed unless an effective-dated venue/product rule input is supplied for any claim that depends on exchange operating rules.
+    requires_fresh_check: true
+limitations:
+  - This card freezes no tick size, session, delivery, or limit schedule.
+  - Current venue rulebooks remain authoritative.

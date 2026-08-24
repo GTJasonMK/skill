@@ -2,50 +2,59 @@
 
 ## Project Structure & Module Organization
 
-This repository is an Agent Skill package, not an application. The main package lives in `statistical-learning-analysis/`.
+This repository is an Agent Skill package, not an application. The package is
+under `10-data-quant/statistical-learning-analysis/`:
 
-- `SKILL.md` is the skill entry point, workflow contract, and manual index.
-- `scripts/` contains flat, standalone Python CLI tools. Shared helpers live in `scripts/quant_utils.py`; do not add script subdirectories.
-- `references/` contains method maps, guardrails, report templates, and quant-finance guidance.
-- `examples/` contains synthetic-data demos and shell pipelines. Generated demo data and outputs are written under `examples/data/` and `examples/out/`.
-- `agents/openai.yaml` stores agent configuration.
+- `SKILL.md` defines the skill workflow and indexes its references.
+- `scripts/` contains standalone Python CLIs; shared CSV and numerical helpers belong in `scripts/quant_utils.py`.
+- `references/` contains method maps, guardrails, templates, and finance guidance.
+- `examples/` contains synthetic-data demos and shell pipelines. Demo data and reports are written to `examples/data/` and `examples/out/`.
+- `agents/openai.yaml` contains agent configuration.
+
+Keep scripts flat and update the relevant indexes when adding files.
 
 ## Build, Test, and Development Commands
 
-Run commands from `statistical-learning-analysis/` unless noted.
+Run from `10-data-quant/statistical-learning-analysis/`:
 
 ```bash
-pip install -r requirements.txt
-pip install -r requirements-optional.txt
-pip install -r requirements-dev.txt
-```
-
-Installs required `numpy`, `pandas`, and `scipy`; optional dependencies support `sklearn_tabular_model.py` and `cluster_quality_report.py`; dev dependencies support upstream skill validation.
-
-```bash
+pip install -r requirements.txt -r requirements-optional.txt -r requirements-dev.txt
 bash scripts/smoke_check.sh --quick
 bash scripts/smoke_check.sh --full
 python3 scripts/<script_name>.py --help
 python3 scripts/_check_skill_index.py
-bash examples/run_alpha_pipeline.sh
-bash examples/run_portfolio_pipeline.sh
-bash examples/run_nonquant_examples.sh
 ```
 
-Use quick smoke checks before every change handoff. Run the full smoke check after installing all requirements; it includes CLI help, upstream validation, and the three example pipelines. Use `_check_skill_index.py` when changing scripts or references.
+Use `--quick` for routine changes; `--full` also checks dependencies and all
+example pipelines. Run the matching command when changing a pipeline:
+`bash examples/run_alpha_pipeline.sh`,
+`bash examples/run_portfolio_pipeline.sh`, or
+`bash examples/run_nonquant_examples.sh`.
 
 ## Coding Style & Naming Conventions
 
-Use Python 3 scripts with `#!/usr/bin/env python3`, `from __future__ import annotations`, a top-level docstring, and `argparse` for CLIs. Prefer `snake_case` for filenames, functions, arguments, and JSON fields. Keep scripts standalone and executable from `scripts/`; if a feature belongs in shared numerical or CSV handling, extend `quant_utils.py` instead of duplicating logic. Use pandas/numpy/scipy for matrix and tabular work. Keep Markdown headings descriptive and update links when moving documents.
+Use Python 3 with `#!/usr/bin/env python3`, `from __future__ import annotations`,
+a module docstring, and `argparse` for CLIs. Use four-space indentation,
+`snake_case` filenames/functions/arguments, and clear Markdown headings. Prefer
+the standard library where practical; use pandas, NumPy, and SciPy for tabular
+or numerical work. Keep errors explicit and validate inputs at CLI boundaries.
 
 ## Testing Guidelines
 
-There is no dedicated coverage target in this checkout. Treat validation as: run `bash scripts/smoke_check.sh --quick`, execute changed scripts on small representative inputs, then run `bash scripts/smoke_check.sh --full` when dependencies are installed. For new scripts, add deterministic output examples or connect them to an existing demo chain when practical.
+There is no dedicated test suite or coverage threshold. Validate changed code
+with the quick smoke check and a small representative CLI invocation. New
+scripts should expose working `--help` output and, where practical, add a
+deterministic fixture or example pipeline check.
 
 ## Commit & Pull Request Guidelines
 
-Git history is not available in this checkout, so use concise imperative commit messages such as `Add calibration report example` or `Update quant gate documentation`. Pull requests should describe the changed workflow, list validation commands and outputs, link any relevant issue, and include screenshots or report snippets only when Markdown/JSON output changed.
+History currently contains only `init`, so use concise imperative commits such
+as `Add calibration report example`. Pull requests should explain the workflow
+change, list validation commands and results, link the relevant issue, and
+include report snippets when Markdown or JSON contracts change.
 
 ## Agent-Specific Instructions
 
-When adding a script, update `SKILL.md` in both `## Scripts` and `## References`, add it to `references/implementation-map.md`, and consider quant reference updates if it supports finance workflows. Do not weaken guardrails in `SKILL.md`; they are part of the skill behavior contract.
+When adding a script, update `SKILL.md` in both `## Scripts` and `## References`
+and add it to `references/implementation-map.md`. Do not weaken the guardrails
+or output contracts documented in `SKILL.md`.

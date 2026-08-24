@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quant Data Engineering"
+  short_description: "量化数据契约、PIT、日历、复权、标签和血缘审计"
+  default_prompt: "Use $quant-data-engineering to map my source data into canonical point-in-time tables, validate timing and lineage, and state whether the data can support the requested research stage."

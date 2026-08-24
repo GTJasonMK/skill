@@ -1,0 +1,151 @@
+{
+  "$defs": {
+    "CurveShockScenario": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "node_shocks_bps": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Node Shocks Bps",
+          "type": "object"
+        },
+        "parallel_bps": {
+          "default": 0.0,
+          "title": "Parallel Bps",
+          "type": "number"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "CurveShockScenario",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "calendar_id": {
+      "minLength": 1,
+      "title": "Calendar Id",
+      "type": "string"
+    },
+    "call_price_per_100": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Call Price Per 100"
+    },
+    "call_style": {
+      "default": "american",
+      "enum": [
+        "american",
+        "bermudan"
+      ],
+      "title": "Call Style",
+      "type": "string"
+    },
+    "curve_id": {
+      "minLength": 1,
+      "title": "Curve Id",
+      "type": "string"
+    },
+    "instrument_id": {
+      "minLength": 1,
+      "title": "Instrument Id",
+      "type": "string"
+    },
+    "loss_limit_fraction": {
+      "default": 0.1,
+      "exclusiveMinimum": 0,
+      "title": "Loss Limit Fraction",
+      "type": "number"
+    },
+    "market_dirty_price": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Market Dirty Price"
+    },
+    "projection_curve_id": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Projection Curve Id"
+    },
+    "rate_volatility": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Rate Volatility",
+      "type": "number"
+    },
+    "require_spread_curve": {
+      "default": false,
+      "title": "Require Spread Curve",
+      "type": "boolean"
+    },
+    "scenarios": {
+      "items": {
+        "$ref": "#/$defs/CurveShockScenario"
+      },
+      "minItems": 1,
+      "title": "Scenarios",
+      "type": "array"
+    },
+    "spread_curve_id": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Spread Curve Id"
+    },
+    "valuation_at": {
+      "minLength": 1,
+      "title": "Valuation At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "instrument_id",
+    "curve_id",
+    "calendar_id",
+    "valuation_at",
+    "scenarios"
+  ],
+  "title": "FixedIncomeCurveStressParameters",
+  "type": "object",
+  "x-diagnostic-id": "fixed-income-curve-stress",
+  "x-manifest-stage": "risk"
+}

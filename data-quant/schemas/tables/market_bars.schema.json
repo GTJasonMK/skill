@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Timestamped market bars with explicit currency and adjustment state.",
+  "properties": {
+    "adjustment_state": {
+      "type": "string"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "close": {
+      "type": "number",
+      "x-unit": "price"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "high": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "price"
+    },
+    "low": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "price"
+    },
+    "open": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "price"
+    },
+    "open_interest": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "quantity"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "turnover": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "currency"
+    },
+    "volume": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "quantity"
+    }
+  },
+  "required": [
+    "timestamp",
+    "asset_id",
+    "close",
+    "currency",
+    "adjustment_state"
+  ],
+  "title": "market_bars",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "timestamp",
+    "asset_id",
+    "adjustment_state"
+  ],
+  "x-timestamp-fields": [
+    "timestamp"
+  ]
+}

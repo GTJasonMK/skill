@@ -1,0 +1,4 @@
+interface:
+  display_name: "电影镜头设计与导演调度"
+  short_description: "系统化完成镜头设计、场面调度、故事板预演与运动摄影机方案审计"
+  default_prompt: "Use $shot-design-directing to turn this scene into a source-grounded, shootable shot plan with explicit assumptions and risks."

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+source_id: official-cftc-crypto-leverage-boundary
+publisher: U.S. Commodity Futures Trading Commission
+url: https://www.cftc.gov/PressRoom/PressReleases/8433-21
+accessed_at: "2026-08-15T12:41:53Z"
+effective_from: "2026-08-15"
+effective_to: null
+retrieval:
+  status: retrieved
+  media_type: text/html
+  response_digest: sha256:fcbdefd7b8b7781c164f6ab84b51c0661daf581af5d73768ad1ffc322a5bc948
+claims:
+  - claim_id: leveraged-crypto-needs-jurisdiction-and-registration-evidence
+    summary: Leveraged retail digital-asset commodity transactions can raise exchange, registration, and actual-delivery requirements under U.S. commodity law.
+    implementation_use: Preserve offline-only behavior and require current jurisdiction, venue, product, and customer-status evidence before any compliance claim.
+    requires_fresh_check: true
+limitations:
+  - An enforcement release is not a complete rulebook or legal opinion.
+  - This card freezes no venue margin tier, liquidation waterfall, collateral, custody, or customer-eligibility rule.

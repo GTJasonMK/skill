@@ -1,0 +1,59 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "embargo": {
+      "default": "0s",
+      "title": "Embargo",
+      "type": "string"
+    },
+    "expanding": {
+      "default": false,
+      "title": "Expanding",
+      "type": "boolean"
+    },
+    "label": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Label"
+    },
+    "step_periods": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Step Periods"
+    },
+    "test_periods": {
+      "minimum": 1,
+      "title": "Test Periods",
+      "type": "integer"
+    },
+    "train_periods": {
+      "minimum": 1,
+      "title": "Train Periods",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "train_periods",
+    "test_periods"
+  ],
+  "title": "PurgedWalkForwardParameters",
+  "type": "object",
+  "x-diagnostic-id": "purged-walk-forward",
+  "x-manifest-stage": "validation"
+}

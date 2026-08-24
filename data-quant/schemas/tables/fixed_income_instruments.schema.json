@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Bond and fixed-income terms required to reconstruct cashflows.",
+  "properties": {
+    "amortization_type": {
+      "description": "bullet or scheduled; omitted means bullet for compatibility.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "business_day_convention": {
+      "type": "string"
+    },
+    "coupon_frequency": {
+      "type": "integer"
+    },
+    "coupon_rate": {
+      "type": "number"
+    },
+    "coupon_spread_bps": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "basis_points"
+    },
+    "coupon_type": {
+      "description": "fixed or floating; omitted means fixed for compatibility.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "day_count": {
+      "type": "string"
+    },
+    "ex_coupon_days": {
+      "description": "Calendar days before payment when accrued interest detaches.",
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "face_value": {
+      "type": "number",
+      "x-unit": "currency"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "issue_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer_id": {
+      "type": "string"
+    },
+    "maturity_at": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [
+    "instrument_id",
+    "issuer_id",
+    "currency",
+    "issue_at",
+    "maturity_at",
+    "coupon_rate",
+    "coupon_frequency",
+    "day_count",
+    "business_day_convention",
+    "face_value"
+  ],
+  "title": "fixed_income_instruments",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "instrument_id"
+  ],
+  "x-timestamp-fields": [
+    "issue_at",
+    "maturity_at"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT FX replacement quotes available at a settlement-fail evaluation time.",
+  "properties": {
+    "ask": {
+      "type": "number"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "base_currency": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "number"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "quote_currency": {
+      "type": "string"
+    },
+    "value_date": {
+      "format": "date",
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "observed_at",
+    "available_at",
+    "value_date",
+    "base_currency",
+    "quote_currency",
+    "bid",
+    "ask",
+    "venue"
+  ],
+  "title": "fx_replacement_quotes",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "observed_at",
+    "available_at",
+    "value_date",
+    "base_currency",
+    "quote_currency",
+    "venue"
+  ],
+  "x-timestamp-fields": [
+    "observed_at",
+    "available_at"
+  ]
+}

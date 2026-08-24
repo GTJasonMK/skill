@@ -1,0 +1,4 @@
+interface:
+  display_name: "FX Quant Analysis"
+  short_description: "外汇报价、远期、套息、结算与币种风险审计"
+  default_prompt: "Use $fx-quant-analysis to lock pair orientation and numeraire, align settlement calendars, and audit spot, carry, funding, costs, and currency attribution."

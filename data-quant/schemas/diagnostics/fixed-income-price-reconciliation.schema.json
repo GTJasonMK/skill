@@ -1,0 +1,58 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "instrument_id": {
+      "minLength": 1,
+      "title": "Instrument Id",
+      "type": "string"
+    },
+    "max_quote_age": {
+      "default": "1D",
+      "title": "Max Quote Age",
+      "type": "string"
+    },
+    "maximum_coupon_error": {
+      "default": 1e-08,
+      "minimum": 0,
+      "title": "Maximum Coupon Error",
+      "type": "number"
+    },
+    "maximum_price_error": {
+      "default": 1e-08,
+      "minimum": 0,
+      "title": "Maximum Price Error",
+      "type": "number"
+    },
+    "require_irregular_stub": {
+      "default": false,
+      "title": "Require Irregular Stub",
+      "type": "boolean"
+    },
+    "valuation_at": {
+      "minLength": 1,
+      "title": "Valuation At",
+      "type": "string"
+    },
+    "venue": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Venue"
+    }
+  },
+  "required": [
+    "instrument_id",
+    "valuation_at"
+  ],
+  "title": "FixedIncomePriceReconciliationParameters",
+  "type": "object",
+  "x-diagnostic-id": "fixed-income-price-reconciliation",
+  "x-manifest-stage": "validation"
+}

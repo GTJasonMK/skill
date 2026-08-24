@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "allow_late_revisions": {
+      "default": true,
+      "title": "Allow Late Revisions",
+      "type": "boolean"
+    },
+    "dividend_withholding_rate": {
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Dividend Withholding Rate",
+      "type": "number"
+    },
+    "evaluated_at": {
+      "minLength": 1,
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "max_bar_gap": {
+      "default": "7D",
+      "title": "Max Bar Gap",
+      "type": "string"
+    },
+    "maximum_return_error": {
+      "default": 1e-08,
+      "minimum": 0,
+      "title": "Maximum Return Error",
+      "type": "number"
+    },
+    "minimum_actions": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Minimum Actions",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "evaluated_at"
+  ],
+  "title": "CorporateActionAdjustmentParameters",
+  "type": "object",
+  "x-diagnostic-id": "corporate-action-adjustment",
+  "x-manifest-stage": "validation"
+}

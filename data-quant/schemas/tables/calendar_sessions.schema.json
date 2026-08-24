@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Effective exchange sessions with timezone-aware open and close times.",
+  "properties": {
+    "calendar_id": {
+      "type": "string"
+    },
+    "close_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "is_half_day": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "open_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "session": {
+      "format": "date",
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "calendar_id",
+    "session",
+    "timezone",
+    "open_at",
+    "close_at"
+  ],
+  "title": "calendar_sessions",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "calendar_id",
+    "session"
+  ],
+  "x-timestamp-fields": [
+    "open_at",
+    "close_at"
+  ]
+}

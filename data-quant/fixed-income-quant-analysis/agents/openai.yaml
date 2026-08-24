@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fixed Income Quant Analysis"
+  short_description: "债券现金流、曲线、久期凸性、信用和压力测试"
+  default_prompt: "Use $fixed-income-quant-analysis to reconstruct cashflows and conventions, select the correct curve, and audit valuation, carry, credit, liquidity, and rate risk."

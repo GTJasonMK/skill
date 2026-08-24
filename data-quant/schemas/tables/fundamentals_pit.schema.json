@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Versioned fundamental observations as available at each decision time.",
+  "properties": {
+    "announced_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "field": {
+      "type": "string"
+    },
+    "period_end": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "revision_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "asset_id",
+    "field",
+    "value",
+    "period_end",
+    "announced_at",
+    "available_at"
+  ],
+  "title": "fundamentals_pit",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "asset_id",
+    "field",
+    "period_end",
+    "available_at"
+  ],
+  "x-timestamp-fields": [
+    "period_end",
+    "announced_at",
+    "available_at",
+    "revision_at"
+  ]
+}

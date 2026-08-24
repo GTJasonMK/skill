@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Effective option terms and underlying linkage.",
+  "properties": {
+    "currency": {
+      "type": "string"
+    },
+    "exercise_style": {
+      "type": "string"
+    },
+    "expiry_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "listed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "multiplier": {
+      "type": "number"
+    },
+    "option_id": {
+      "type": "string"
+    },
+    "option_type": {
+      "type": "string"
+    },
+    "settlement_type": {
+      "type": "string"
+    },
+    "strike": {
+      "type": "number",
+      "x-unit": "price"
+    },
+    "underlying_id": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "option_id",
+    "underlying_id",
+    "venue",
+    "option_type",
+    "strike",
+    "expiry_at",
+    "exercise_style",
+    "settlement_type",
+    "multiplier",
+    "currency",
+    "listed_at"
+  ],
+  "title": "option_contracts",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "option_id"
+  ],
+  "x-timestamp-fields": [
+    "listed_at",
+    "expiry_at"
+  ]
+}

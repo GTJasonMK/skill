@@ -1,0 +1,7 @@
+interface:
+  display_name: "Quant Trading Black Box Analysis"
+  short_description: "量化交易黑箱分析、策略审计、回测验证与高频交易推理指南"
+  default_prompt: "Use $quant-trading-black-box-analysis to analyze a quantitative trading strategy from alpha, risk, cost, portfolio construction, execution, data, research, and market-structure perspectives."
+
+policy:
+  allow_implicit_invocation: true

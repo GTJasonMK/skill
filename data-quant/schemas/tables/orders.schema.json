@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Orders with decision, submission, status, and venue evidence.",
+  "properties": {
+    "acknowledged_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "amend_limit_price": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "price"
+    },
+    "amended_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "decision_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "expires_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "limit_price": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "price"
+    },
+    "order_id": {
+      "type": "string"
+    },
+    "order_type": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number",
+      "x-unit": "quantity"
+    },
+    "queue_priority": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "side": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submitted_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "time_in_force": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "order_id",
+    "asset_id",
+    "decision_at",
+    "submitted_at",
+    "side",
+    "quantity",
+    "order_type",
+    "venue",
+    "status"
+  ],
+  "title": "orders",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "order_id"
+  ],
+  "x-timestamp-fields": [
+    "decision_at",
+    "submitted_at",
+    "acknowledged_at",
+    "expires_at"
+  ]
+}

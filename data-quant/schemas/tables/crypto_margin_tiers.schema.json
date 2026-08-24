@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Effective-dated linear-contract margin and liquidation-fee tiers.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "initial_margin_rate": {
+      "type": "number"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "liquidation_fee_rate": {
+      "type": "number"
+    },
+    "maintenance_margin_rate": {
+      "type": "number"
+    },
+    "notional_cap": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "notional_floor": {
+      "type": "number"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "venue",
+    "instrument_id",
+    "effective_from",
+    "available_at",
+    "notional_floor",
+    "initial_margin_rate",
+    "maintenance_margin_rate",
+    "liquidation_fee_rate"
+  ],
+  "title": "crypto_margin_tiers",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "venue",
+    "instrument_id",
+    "effective_from",
+    "notional_floor"
+  ],
+  "x-timestamp-fields": [
+    "effective_from",
+    "available_at"
+  ]
+}

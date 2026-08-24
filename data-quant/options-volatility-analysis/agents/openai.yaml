@@ -1,0 +1,4 @@
+interface:
+  display_name: "Options Volatility Analysis"
+  short_description: "期权链、IV、Greeks、对冲与波动率策略审计"
+  default_prompt: "Use $options-volatility-analysis to validate the option chain and assumptions, compute model/Greek diagnostics, and audit executable hedged PnL and risks."

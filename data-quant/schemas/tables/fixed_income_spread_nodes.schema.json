@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT instrument spread nodes applied to risk-free zero-rate discounting.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "spread_bps": {
+      "type": "number",
+      "x-unit": "basis_points"
+    },
+    "spread_curve_id": {
+      "type": "string"
+    },
+    "tenor_years": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "spread_curve_id",
+    "instrument_id",
+    "observed_at",
+    "available_at",
+    "tenor_years",
+    "spread_bps",
+    "currency"
+  ],
+  "title": "fixed_income_spread_nodes",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "spread_curve_id",
+    "instrument_id",
+    "observed_at",
+    "tenor_years"
+  ],
+  "x-timestamp-fields": [
+    "observed_at",
+    "available_at"
+  ]
+}

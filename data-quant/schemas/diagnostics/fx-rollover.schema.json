@@ -1,0 +1,61 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "base_currency": {
+      "anyOf": [
+        {
+          "maxLength": 3,
+          "minLength": 3,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Base Currency"
+    },
+    "base_rate": {
+      "title": "Base Rate",
+      "type": "number"
+    },
+    "notional_base": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Notional Base",
+      "type": "number"
+    },
+    "quote_currency": {
+      "anyOf": [
+        {
+          "maxLength": 3,
+          "minLength": 3,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Quote Currency"
+    },
+    "quote_rate": {
+      "title": "Quote Rate",
+      "type": "number"
+    },
+    "tenor_days": {
+      "minimum": 1,
+      "title": "Tenor Days",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "base_rate",
+    "quote_rate",
+    "tenor_days"
+  ],
+  "title": "FXRolloverParameters",
+  "type": "object",
+  "x-diagnostic-id": "fx-rollover",
+  "x-manifest-stage": "research"
+}

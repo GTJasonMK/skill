@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time effective borrow eligibility and indicative annual fee.",
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "borrowable": {
+      "type": "boolean"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "effective_to": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fee_rate_annual": {
+      "type": "number"
+    },
+    "max_quantity": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "asset_id",
+    "effective_from",
+    "available_at",
+    "borrowable",
+    "fee_rate_annual",
+    "currency"
+  ],
+  "title": "borrow_availability",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "asset_id",
+    "effective_from"
+  ],
+  "x-timestamp-fields": [
+    "effective_from",
+    "effective_to",
+    "available_at"
+  ]
+}

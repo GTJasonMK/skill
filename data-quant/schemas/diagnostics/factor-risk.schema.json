@@ -1,0 +1,102 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "annualization": {
+      "default": 252.0,
+      "exclusiveMinimum": 0,
+      "title": "Annualization",
+      "type": "number"
+    },
+    "decision_at": {
+      "minLength": 1,
+      "title": "Decision At",
+      "type": "string"
+    },
+    "factor_component_volatility_limits": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Factor Component Volatility Limits",
+      "type": "object"
+    },
+    "factor_exposure_limits": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Factor Exposure Limits",
+      "type": "object"
+    },
+    "factor_model_id": {
+      "minLength": 1,
+      "title": "Factor Model Id",
+      "type": "string"
+    },
+    "lookback_periods": {
+      "default": 60,
+      "minimum": 3,
+      "title": "Lookback Periods",
+      "type": "integer"
+    },
+    "maximum_annualized_factor_volatility": {
+      "default": 1.0,
+      "minimum": 0,
+      "title": "Maximum Annualized Factor Volatility",
+      "type": "number"
+    },
+    "maximum_annualized_total_volatility": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maximum Annualized Total Volatility"
+    },
+    "maximum_covariance_condition_number": {
+      "default": 100000000.0,
+      "exclusiveMinimum": 1,
+      "title": "Maximum Covariance Condition Number",
+      "type": "number"
+    },
+    "minimum_observations": {
+      "default": 20,
+      "minimum": 3,
+      "title": "Minimum Observations",
+      "type": "integer"
+    },
+    "return_basis": {
+      "default": "gross",
+      "enum": [
+        "gross",
+        "excess"
+      ],
+      "title": "Return Basis",
+      "type": "string"
+    },
+    "specific_risk_volatilities": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Specific Risk Volatilities",
+      "type": "object"
+    },
+    "weight_type": {
+      "minLength": 1,
+      "title": "Weight Type",
+      "type": "string"
+    }
+  },
+  "required": [
+    "factor_model_id",
+    "decision_at",
+    "weight_type"
+  ],
+  "title": "FactorRiskParameters",
+  "type": "object",
+  "x-diagnostic-id": "factor-risk",
+  "x-manifest-stage": "risk"
+}

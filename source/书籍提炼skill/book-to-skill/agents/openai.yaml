@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book To Skill"
+  short_description: "Distill PDFs into genre-aware skills"
+  default_prompt: "Use $book-to-skill to distill a book PDF into source TXT, complete Markdown chapter notes, and a genre-aware domain skill."

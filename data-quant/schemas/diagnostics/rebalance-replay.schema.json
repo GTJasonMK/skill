@@ -1,0 +1,114 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "commission_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Commission Bps",
+      "type": "number"
+    },
+    "current_weight_type": {
+      "default": "current",
+      "minLength": 1,
+      "title": "Current Weight Type",
+      "type": "string"
+    },
+    "hidden_liquidity_fraction": {
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Hidden Liquidity Fraction",
+      "type": "number"
+    },
+    "hidden_spread_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Hidden Spread Bps",
+      "type": "number"
+    },
+    "impact_coefficient_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Impact Coefficient Bps",
+      "type": "number"
+    },
+    "impact_model": {
+      "default": "linear",
+      "enum": [
+        "linear",
+        "square_root"
+      ],
+      "title": "Impact Model",
+      "type": "string"
+    },
+    "initial_cash": {
+      "default": 1000000.0,
+      "exclusiveMinimum": 0,
+      "title": "Initial Cash",
+      "type": "number"
+    },
+    "lot_size": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Lot Size",
+      "type": "number"
+    },
+    "max_participation": {
+      "default": 0.1,
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "title": "Max Participation",
+      "type": "number"
+    },
+    "min_trade_notional": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Min Trade Notional",
+      "type": "number"
+    },
+    "net_across_decisions": {
+      "default": false,
+      "title": "Net Across Decisions",
+      "type": "boolean"
+    },
+    "permanent_impact_coefficient_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Permanent Impact Coefficient Bps",
+      "type": "number"
+    },
+    "portfolio_value": {
+      "exclusiveMinimum": 0,
+      "title": "Portfolio Value",
+      "type": "number"
+    },
+    "slippage_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Slippage Bps",
+      "type": "number"
+    },
+    "target_weight_type": {
+      "default": "target",
+      "minLength": 1,
+      "title": "Target Weight Type",
+      "type": "string"
+    },
+    "time_in_force": {
+      "default": "gtc",
+      "enum": [
+        "gtc",
+        "ioc"
+      ],
+      "title": "Time In Force",
+      "type": "string"
+    }
+  },
+  "required": [
+    "portfolio_value"
+  ],
+  "title": "RebalanceReplayParameters",
+  "type": "object",
+  "x-diagnostic-id": "rebalance-replay",
+  "x-manifest-stage": "execution"
+}

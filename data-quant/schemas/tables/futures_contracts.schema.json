@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Effective futures contract lifecycle and economic terms.",
+  "properties": {
+    "contract_id": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "expiry_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "first_notice_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "last_trade_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "listed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "multiplier": {
+      "type": "number"
+    },
+    "root": {
+      "type": "string"
+    },
+    "settlement_type": {
+      "type": "string"
+    },
+    "tick_size": {
+      "type": "number"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "contract_id",
+    "root",
+    "venue",
+    "currency",
+    "multiplier",
+    "tick_size",
+    "listed_at",
+    "last_trade_at",
+    "expiry_at",
+    "settlement_type"
+  ],
+  "title": "futures_contracts",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "contract_id"
+  ],
+  "x-timestamp-fields": [
+    "listed_at",
+    "first_notice_at",
+    "last_trade_at",
+    "expiry_at"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT reference-rate fixings for floating fixed-income coupons.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "reference_rate": {
+      "type": "number"
+    },
+    "reset_at": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [
+    "instrument_id",
+    "reset_at",
+    "available_at",
+    "reference_rate",
+    "currency"
+  ],
+  "title": "fixed_income_rate_fixings",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "instrument_id",
+    "reset_at",
+    "available_at"
+  ],
+  "x-timestamp-fields": [
+    "reset_at",
+    "available_at"
+  ]
+}

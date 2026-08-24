@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT contract margin requirements and exchange daily price limits.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "contract_id": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "daily_price_limit_fraction": {
+      "type": "number"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "initial_margin_per_contract": {
+      "type": "number"
+    },
+    "maintenance_margin_per_contract": {
+      "type": "number"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "venue",
+    "contract_id",
+    "effective_from",
+    "available_at",
+    "initial_margin_per_contract",
+    "maintenance_margin_per_contract",
+    "daily_price_limit_fraction",
+    "currency"
+  ],
+  "title": "futures_margin_terms",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "venue",
+    "contract_id",
+    "effective_from"
+  ],
+  "x-timestamp-fields": [
+    "effective_from",
+    "available_at"
+  ]
+}

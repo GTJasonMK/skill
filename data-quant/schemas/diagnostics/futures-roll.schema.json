@@ -1,0 +1,56 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "annualization": {
+      "default": 252,
+      "minimum": 1,
+      "title": "Annualization",
+      "type": "integer"
+    },
+    "collateral_rate_annual": {
+      "default": 0.0,
+      "exclusiveMinimum": -1,
+      "title": "Collateral Rate Annual",
+      "type": "number"
+    },
+    "confirmation_periods": {
+      "default": 2,
+      "minimum": 1,
+      "title": "Confirmation Periods",
+      "type": "integer"
+    },
+    "roll_days_before_expiry": {
+      "default": 5,
+      "minimum": 0,
+      "title": "Roll Days Before Expiry",
+      "type": "integer"
+    },
+    "roll_method": {
+      "default": "expiry",
+      "enum": [
+        "expiry",
+        "volume",
+        "open_interest"
+      ],
+      "title": "Roll Method",
+      "type": "string"
+    },
+    "root": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Root"
+    }
+  },
+  "title": "FuturesRollParameters",
+  "type": "object",
+  "x-diagnostic-id": "futures-roll",
+  "x-manifest-stage": "research"
+}

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 仓库性质
 
-本仓库是一个 **Agent Skill 包**（不是应用程序），位于 `statistical-learning-analysis/`,提供端到端统计学习与量化金融分析的方法选择与诊断能力。它由 Claude/Codex 等代理通过 `SKILL.md` 加载,并按需读取 `references/` 文档与运行 `scripts/` 工具。
+本仓库是一个 **Agent Skill 包**（不是应用程序），位于 `10-data-quant/statistical-learning-analysis/`,提供端到端统计学习与量化金融分析的方法选择与诊断能力。它由 Claude/Codex 等代理通过 `SKILL.md` 加载,并按需读取 `references/` 文档与运行 `scripts/` 工具。
 
 仓库**包含** `requirements.txt`、`requirements-optional.txt`、`examples/` demo 数据与 shell,以及 `scripts/_check_skill_index.py` 索引校验工具。**不包含**构建系统、`package.json`、测试目录或 CI 配置。改动的对象主要是 Markdown 文档和独立 Python 脚本。
 
@@ -13,7 +13,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### 安装依赖
 仓库现在依赖 numpy/pandas/scipy(必选)与 scikit-learn/joblib(可选):
 ```bash
-cd statistical-learning-analysis
+cd 10-data-quant/statistical-learning-analysis
 pip install -r requirements.txt
 pip install -r requirements-optional.txt   # 仅 sklearn_tabular_model.py + cluster_quality_report.py 需要
 pip install -r requirements-dev.txt        # upstream skill quick_validate 需要 PyYAML
@@ -22,7 +22,7 @@ pip install -r requirements-dev.txt        # upstream skill quick_validate 需�
 ### 运行任意脚本
 绝大多数脚本依赖 **numpy + pandas (+ scipy)**;另有 9 个统计学习起步工具仍仅依赖标准库(profile_dataset、split_dataset、causal_balance_check、time_series_backtest、classification_report、threshold_tuning、missingness_report、panel_summary、compare_model_reports):
 ```bash
-cd statistical-learning-analysis/scripts
+cd 10-data-quant/statistical-learning-analysis/scripts
 python3 <脚本名>.py --help              # 查看参数
 python3 profile_dataset.py path/to.csv   # CSV 第一遍画像
 ```
@@ -30,7 +30,7 @@ python3 profile_dataset.py path/to.csv   # CSV 第一遍画像
 ### 端到端 demo
 仓库包含 3 条 demo 链路,合成数据 + shell 串联,首次运行会自动生成数据:
 ```bash
-cd statistical-learning-analysis
+cd 10-data-quant/statistical-learning-analysis
 bash examples/run_alpha_pipeline.sh        # factor_ic → incremental_alpha → alpha_research_gate
 bash examples/run_portfolio_pipeline.sh    # portfolio_backtest → portfolio_construction_gate
 bash examples/run_nonquant_examples.sh     # 生存 / 异常 / 聚类 / 校准

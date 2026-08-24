@@ -1,0 +1,19 @@
+schema_version: "1.0"
+source_id: official-us-futures-position-limits
+publisher: U.S. Government Publishing Office, Electronic Code of Federal Regulations
+url: https://www.ecfr.gov/current/title-17/chapter-I/part-150
+accessed_at: "2026-08-15T12:41:53Z"
+effective_from: "2026-08-15"
+effective_to: null
+retrieval:
+  status: retrieved
+  media_type: text/html
+  response_digest: sha256:038896317a05493088c99a7b762ba1787f37e5df41af6816c399f4c0cf688dee
+claims:
+  - claim_id: federal-position-limits-require-effective-rules
+    summary: U.S. federal futures position limits, exemptions, and referenced contract scopes are governed by effective rules in 17 CFR Part 150.
+    implementation_use: Require an effective-dated venue/regulatory position-limit input before claiming futures position-limit compliance.
+    requires_fresh_check: true
+limitations:
+  - This normalized card does not copy rule text or freeze numeric limits.
+  - Exchange accountability levels, product terms, exemptions, and later amendments require separate current evidence.

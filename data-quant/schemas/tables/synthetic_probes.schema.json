@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Independent synthetic reachability probes executed per service window.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "environment": {
+      "type": "string"
+    },
+    "latency_ms": {
+      "type": "number",
+      "x-unit": "milliseconds"
+    },
+    "probe_end": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "probe_start": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "probe_type": {
+      "type": "string"
+    },
+    "service_id": {
+      "type": "string"
+    },
+    "status_code": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "success": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "service_id",
+    "environment",
+    "probe_start",
+    "probe_end",
+    "available_at",
+    "probe_type",
+    "success",
+    "latency_ms"
+  ],
+  "title": "synthetic_probes",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "service_id",
+    "environment",
+    "probe_start"
+  ],
+  "x-timestamp-fields": [
+    "probe_start",
+    "probe_end",
+    "available_at"
+  ]
+}

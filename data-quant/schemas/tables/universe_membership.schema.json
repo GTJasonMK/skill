@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Effective-dated and point-in-time-observable universe membership.",
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "effective_to": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "eligible": {
+      "type": "boolean"
+    },
+    "universe_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "universe_id",
+    "asset_id",
+    "effective_from",
+    "available_at",
+    "eligible"
+  ],
+  "title": "universe_membership",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "universe_id",
+    "asset_id",
+    "effective_from"
+  ],
+  "x-timestamp-fields": [
+    "effective_from",
+    "effective_to",
+    "available_at"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT clean, dirty, and accrued fixed-income price observations per 100 face.",
+  "properties": {
+    "accrued_interest": {
+      "type": "number",
+      "x-unit": "per_100_face"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "clean_price": {
+      "type": "number",
+      "x-unit": "per_100_face"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "dirty_price": {
+      "type": "number",
+      "x-unit": "per_100_face"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "settlement_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "observed_at",
+    "available_at",
+    "settlement_at",
+    "instrument_id",
+    "venue",
+    "clean_price",
+    "dirty_price",
+    "accrued_interest",
+    "currency"
+  ],
+  "title": "fixed_income_price_quotes",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "observed_at",
+    "instrument_id",
+    "venue"
+  ],
+  "x-timestamp-fields": [
+    "observed_at",
+    "available_at",
+    "settlement_at"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT explicit fixed-income accrual periods and contractual payments.",
+  "properties": {
+    "accrual_end": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "accrual_start": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "cashflow_id": {
+      "type": "string"
+    },
+    "coupon_amount": {
+      "type": "number",
+      "x-unit": "currency"
+    },
+    "coupon_rate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "payment_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "principal_amount": {
+      "type": "number",
+      "x-unit": "currency"
+    },
+    "principal_balance_end": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "currency"
+    },
+    "principal_balance_start": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "currency"
+    }
+  },
+  "required": [
+    "instrument_id",
+    "cashflow_id",
+    "available_at",
+    "accrual_start",
+    "accrual_end",
+    "payment_at",
+    "coupon_amount",
+    "principal_amount",
+    "currency"
+  ],
+  "title": "fixed_income_cashflows",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "instrument_id",
+    "cashflow_id",
+    "available_at"
+  ],
+  "x-timestamp-fields": [
+    "available_at",
+    "accrual_start",
+    "accrual_end",
+    "payment_at"
+  ]
+}

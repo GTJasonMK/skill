@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time standardized asset exposures for a declared factor model.",
+  "properties": {
+    "as_of": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "exposure": {
+      "type": "number"
+    },
+    "factor_id": {
+      "type": "string"
+    },
+    "factor_model_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "as_of",
+    "available_at",
+    "factor_model_id",
+    "asset_id",
+    "factor_id",
+    "exposure"
+  ],
+  "title": "factor_exposures",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "as_of",
+    "factor_model_id",
+    "asset_id",
+    "factor_id"
+  ],
+  "x-timestamp-fields": [
+    "as_of",
+    "available_at"
+  ]
+}

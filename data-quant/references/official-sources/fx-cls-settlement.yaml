@@ -1,0 +1,19 @@
+schema_version: "1.0"
+source_id: official-cls-fx-settlement
+publisher: CLS Group
+url: https://www.cls-group.com/news/tplus1/tplus1-settlement/
+accessed_at: "2026-08-15T12:41:53Z"
+effective_from: "2026-08-15"
+effective_to: null
+retrieval:
+  status: retrieved
+  media_type: text/html
+  response_digest: sha256:e41b04d0118fd394beee2938b5e2c48441af74dd23fb785908555b9e600e4070
+claims:
+  - claim_id: fx-settlement-needs-more-than-joint-calendars
+    summary: Shorter securities settlement cycles affect FX funding and settlement workflows; currency calendars alone do not establish CLS eligibility or cutoff compliance.
+    implementation_use: Keep CLS eligibility, submission cutoff, funding, and settlement completion outside joint-calendar FX value-date claims unless explicit current evidence is supplied.
+    requires_fresh_check: true
+limitations:
+  - This card freezes no CLS currency eligibility, operating timeline, holiday, cutoff, or member rule.
+  - Product, jurisdiction, participant, and currency-specific operational documents remain required.

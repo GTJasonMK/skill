@@ -1,0 +1,133 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "butterfly_convexity_tolerance": {
+      "default": 1e-08,
+      "minimum": 0,
+      "title": "Butterfly Convexity Tolerance",
+      "type": "number"
+    },
+    "calendar_variance_tolerance": {
+      "default": 1e-08,
+      "minimum": 0,
+      "title": "Calendar Variance Tolerance",
+      "type": "number"
+    },
+    "dividend_yield": {
+      "default": 0.0,
+      "title": "Dividend Yield",
+      "type": "number"
+    },
+    "enforce_arbitrage_free": {
+      "default": true,
+      "title": "Enforce Arbitrage Free",
+      "type": "boolean"
+    },
+    "evaluated_at": {
+      "minLength": 1,
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "max_iv_jump": {
+      "default": 0.5,
+      "exclusiveMinimum": 0,
+      "title": "Max Iv Jump",
+      "type": "number"
+    },
+    "max_moneyness_gap": {
+      "default": 0.25,
+      "exclusiveMinimum": 0,
+      "title": "Max Moneyness Gap",
+      "type": "number"
+    },
+    "max_tenor_gap_years": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Max Tenor Gap Years",
+      "type": "number"
+    },
+    "min_expiries": {
+      "default": 2,
+      "minimum": 2,
+      "title": "Min Expiries",
+      "type": "integer"
+    },
+    "min_strikes_per_expiry": {
+      "default": 3,
+      "minimum": 2,
+      "title": "Min Strikes Per Expiry",
+      "type": "integer"
+    },
+    "moneyness_grid": {
+      "default": [
+        -0.2,
+        -0.1,
+        0.0,
+        0.1,
+        0.2
+      ],
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "title": "Moneyness Grid",
+      "type": "array"
+    },
+    "risk_free_rate": {
+      "default": 0.0,
+      "title": "Risk Free Rate",
+      "type": "number"
+    },
+    "smoothing_method": {
+      "default": "rolling_median",
+      "enum": [
+        "rolling_median",
+        "quadratic_total_variance",
+        "cubic_total_variance",
+        "svi_total_variance",
+        "raw_svi_total_variance",
+        "ssvi_total_variance"
+      ],
+      "title": "Smoothing Method",
+      "type": "string"
+    },
+    "smoothing_window": {
+      "default": 3,
+      "minimum": 1,
+      "title": "Smoothing Window",
+      "type": "integer"
+    },
+    "spot": {
+      "exclusiveMinimum": 0,
+      "title": "Spot",
+      "type": "number"
+    },
+    "tenor_grid_years": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Tenor Grid Years",
+      "type": "array"
+    },
+    "underlying_id": {
+      "minLength": 1,
+      "title": "Underlying Id",
+      "type": "string"
+    },
+    "venue": {
+      "minLength": 1,
+      "title": "Venue",
+      "type": "string"
+    }
+  },
+  "required": [
+    "underlying_id",
+    "venue",
+    "evaluated_at",
+    "spot"
+  ],
+  "title": "OptionSurfaceSmoothingParameters",
+  "type": "object",
+  "x-diagnostic-id": "option-surface-smooth",
+  "x-manifest-stage": "risk"
+}

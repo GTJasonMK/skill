@@ -1,0 +1,68 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "commission_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Commission Bps",
+      "type": "number"
+    },
+    "hidden_liquidity_fraction": {
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Hidden Liquidity Fraction",
+      "type": "number"
+    },
+    "hidden_spread_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Hidden Spread Bps",
+      "type": "number"
+    },
+    "impact_coefficient_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Impact Coefficient Bps",
+      "type": "number"
+    },
+    "impact_model": {
+      "default": "linear",
+      "enum": [
+        "linear",
+        "square_root"
+      ],
+      "title": "Impact Model",
+      "type": "string"
+    },
+    "initial_cash": {
+      "default": 1000000.0,
+      "exclusiveMinimum": 0,
+      "title": "Initial Cash",
+      "type": "number"
+    },
+    "max_participation": {
+      "default": 0.1,
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "title": "Max Participation",
+      "type": "number"
+    },
+    "permanent_impact_coefficient_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Permanent Impact Coefficient Bps",
+      "type": "number"
+    },
+    "slippage_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Slippage Bps",
+      "type": "number"
+    }
+  },
+  "title": "ExecutionReplayParameters",
+  "type": "object",
+  "x-diagnostic-id": "execution-replay",
+  "x-manifest-stage": "execution"
+}

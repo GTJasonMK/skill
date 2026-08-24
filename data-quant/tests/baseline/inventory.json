@@ -1,0 +1,30 @@
+{
+  "captured_before_refactor": true,
+  "tree_sha256_excluding_venv": "753d100bcabba7a1263cc50997625c5d604c82aa2f3410391b1973a02ea55f73",
+  "file_count_excluding_venv": 146,
+  "public_script_count": 64,
+  "skill_inventory": {
+    "statistical-learning-analysis": {
+      "markdown_files": 19,
+      "python_scripts_including_internal_helpers": 66
+    },
+    "factor-quant-analysis": {
+      "markdown_files": 36,
+      "python_scripts": 0
+    },
+    "quant-trading-black-box-analysis": {
+      "markdown_files": 13,
+      "python_scripts": 0
+    }
+  },
+  "quick_smoke": {
+    "frontmatter": "pass",
+    "indexed_public_scripts": 64,
+    "indexed_references": 17,
+    "python_files_parsed": 67,
+    "stdlib_cli_help": "pass",
+    "fixture_reports": "pass",
+    "reference_navigation": "pass",
+    "full_dependency_examples": "not_run"
+  }
+}

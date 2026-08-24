@@ -1,0 +1,67 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "promote",
+        "hold",
+        "downgrade",
+        "reject",
+        "pause",
+        "retire"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "artifact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Ids",
+      "type": "array"
+    },
+    "blockers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Blockers",
+      "type": "array"
+    },
+    "decision": {
+      "enum": [
+        "pass",
+        "conditional_pass",
+        "review",
+        "fail"
+      ],
+      "title": "Decision",
+      "type": "string"
+    },
+    "evidence_gaps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Gaps",
+      "type": "array"
+    },
+    "gate": {
+      "minLength": 1,
+      "title": "Gate",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "gate",
+    "decision",
+    "action"
+  ],
+  "title": "GateRecord",
+  "type": "object"
+}

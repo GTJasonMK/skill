@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time credit exposures with rating, duration, and recovery assumptions.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "convexity": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "market_value": {
+      "type": "number"
+    },
+    "modified_duration": {
+      "type": "number"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "portfolio_id": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "string"
+    },
+    "recovery_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "observed_at",
+    "available_at",
+    "portfolio_id",
+    "instrument_id",
+    "rating",
+    "market_value",
+    "modified_duration",
+    "recovery_rate",
+    "currency"
+  ],
+  "title": "credit_exposures",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "observed_at",
+    "portfolio_id",
+    "instrument_id"
+  ],
+  "x-timestamp-fields": [
+    "observed_at",
+    "available_at"
+  ]
+}

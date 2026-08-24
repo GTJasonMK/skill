@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data Quant Hybrid"
+  short_description: "统计学习、量化数据、因子、组合、执行与风险的统一入口"
+  default_prompt: "Use $data-quant-hybrid to route this request to the smallest relevant data/quant specialist set, inspect available evidence, and return versioned diagnostics plus a calibrated stage verdict when applicable."
+
+policy:
+  allow_implicit_invocation: true

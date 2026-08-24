@@ -1,0 +1,29 @@
+schema_version: "1.0"
+project:
+  name: factor-research-example
+  asset_class: equity
+  base_currency: CNY
+data_sources:
+  - id: factors
+    uri: ../data/factor_panel.csv
+    format: csv
+    table_type: factor_panel
+  - id: labels
+    uri: ../data/factor_return_labels.csv
+    format: csv
+    table_type: return_labels
+pipeline:
+  stages: [data, research, governance, report]
+  diagnostics:
+    - diagnostic_id: factor-ic
+      stage: research
+      input_sources: [factors, labels]
+      parameters:
+        signal: value_signal
+        label: next_close
+        min_assets: 5
+  required_diagnostics: [factor-ic]
+  fail_closed: true
+  cache: true
+output_dir: runs/factor-research-example
+seed: 42

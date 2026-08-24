@@ -1,0 +1,141 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "allow_physical_delivery": {
+      "default": false,
+      "title": "Allow Physical Delivery",
+      "type": "boolean"
+    },
+    "annualization": {
+      "default": 252,
+      "minimum": 1,
+      "title": "Annualization",
+      "type": "integer"
+    },
+    "collateral_fx_rate": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Collateral Fx Rate",
+      "type": "number"
+    },
+    "collateral_haircut": {
+      "default": 0.0,
+      "exclusiveMaximum": 1,
+      "minimum": 0,
+      "title": "Collateral Haircut",
+      "type": "number"
+    },
+    "collateral_rate_annual": {
+      "default": 0.0,
+      "exclusiveMinimum": -1,
+      "title": "Collateral Rate Annual",
+      "type": "number"
+    },
+    "confirmation_periods": {
+      "default": 2,
+      "minimum": 1,
+      "title": "Confirmation Periods",
+      "type": "integer"
+    },
+    "daily_loss_limit_fraction": {
+      "default": 0.1,
+      "exclusiveMinimum": 0,
+      "title": "Daily Loss Limit Fraction",
+      "type": "number"
+    },
+    "enforce_position_limits": {
+      "default": false,
+      "title": "Enforce Position Limits",
+      "type": "boolean"
+    },
+    "exchange_fee_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Exchange Fee Bps",
+      "type": "number"
+    },
+    "force_liquidate_on_margin_breach": {
+      "default": false,
+      "title": "Force Liquidate On Margin Breach",
+      "type": "boolean"
+    },
+    "initial_cash": {
+      "exclusiveMinimum": 0,
+      "title": "Initial Cash",
+      "type": "number"
+    },
+    "max_roll_participation": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "title": "Max Roll Participation",
+      "type": "number"
+    },
+    "maximum_gross_notional": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maximum Gross Notional"
+    },
+    "per_contract_fee": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Per Contract Fee",
+      "type": "number"
+    },
+    "position_quantity": {
+      "title": "Position Quantity",
+      "type": "number"
+    },
+    "roll_days_before_expiry": {
+      "default": 5,
+      "minimum": 0,
+      "title": "Roll Days Before Expiry",
+      "type": "integer"
+    },
+    "roll_impact_coefficient_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Roll Impact Coefficient Bps",
+      "type": "number"
+    },
+    "roll_method": {
+      "default": "expiry",
+      "enum": [
+        "expiry",
+        "volume",
+        "open_interest"
+      ],
+      "title": "Roll Method",
+      "type": "string"
+    },
+    "root": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Root"
+    }
+  },
+  "required": [
+    "position_quantity",
+    "initial_cash"
+  ],
+  "title": "FuturesRollExecutionParameters",
+  "type": "object",
+  "x-diagnostic-id": "futures-roll-execution",
+  "x-manifest-stage": "execution"
+}

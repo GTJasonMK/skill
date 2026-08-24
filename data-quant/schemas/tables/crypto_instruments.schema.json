@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Venue-specific crypto spot, perpetual, and dated-future terms.",
+  "properties": {
+    "base_asset": {
+      "type": "string"
+    },
+    "collateral_asset": {
+      "type": "string"
+    },
+    "delisted_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expiry_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "instrument_type": {
+      "type": "string"
+    },
+    "listed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "margin_mode": {
+      "type": "string"
+    },
+    "multiplier": {
+      "type": "number"
+    },
+    "quote_asset": {
+      "type": "string"
+    },
+    "settlement_asset": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "venue",
+    "instrument_id",
+    "instrument_type",
+    "base_asset",
+    "quote_asset",
+    "settlement_asset",
+    "collateral_asset",
+    "multiplier",
+    "listed_at",
+    "margin_mode"
+  ],
+  "title": "crypto_instruments",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "venue",
+    "instrument_id"
+  ],
+  "x-timestamp-fields": [
+    "listed_at",
+    "delisted_at",
+    "expiry_at"
+  ]
+}

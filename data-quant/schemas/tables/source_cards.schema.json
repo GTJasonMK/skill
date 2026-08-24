@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Effective-dated official or vendor source cards used to gate rule freshness.",
+  "properties": {
+    "accessed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string"
+    },
+    "content_digest": {
+      "type": "string"
+    },
+    "effective_from": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_kind": {
+      "type": "string"
+    },
+    "venue": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "source_id",
+    "source_kind",
+    "publisher",
+    "accessed_at",
+    "effective_from",
+    "confidence",
+    "content_digest"
+  ],
+  "title": "source_cards",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "source_id",
+    "accessed_at"
+  ],
+  "x-timestamp-fields": [
+    "accessed_at"
+  ]
+}

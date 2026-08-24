@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Execution fills linked to orders.",
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "fees": {
+      "type": "number",
+      "x-unit": "currency"
+    },
+    "fill_id": {
+      "type": "string"
+    },
+    "filled_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "order_id": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number",
+      "x-unit": "price"
+    },
+    "quantity": {
+      "type": "number",
+      "x-unit": "quantity"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "fill_id",
+    "order_id",
+    "asset_id",
+    "filled_at",
+    "quantity",
+    "price",
+    "fees",
+    "currency",
+    "venue"
+  ],
+  "title": "fills",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "fill_id"
+  ],
+  "x-timestamp-fields": [
+    "filled_at"
+  ]
+}

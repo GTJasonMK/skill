@@ -1,0 +1,426 @@
+{
+  "$defs": {
+    "ExperimentRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Artifact Ids",
+          "type": "array"
+        },
+        "baseline_id": {
+          "minLength": 1,
+          "title": "Baseline Id",
+          "type": "string"
+        },
+        "changed_element": {
+          "minLength": 1,
+          "title": "Changed Element",
+          "type": "string"
+        },
+        "decision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Decision"
+        },
+        "defect_hypothesis": {
+          "minLength": 1,
+          "title": "Defect Hypothesis",
+          "type": "string"
+        },
+        "expected_change": {
+          "minLength": 1,
+          "title": "Expected Change",
+          "type": "string"
+        },
+        "experiment_id": {
+          "minLength": 1,
+          "title": "Experiment Id",
+          "type": "string"
+        },
+        "result": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Result"
+        }
+      },
+      "required": [
+        "experiment_id",
+        "baseline_id",
+        "defect_hypothesis",
+        "changed_element",
+        "expected_change"
+      ],
+      "title": "ExperimentRecord",
+      "type": "object"
+    },
+    "GateRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "promote",
+            "hold",
+            "downgrade",
+            "reject",
+            "pause",
+            "retire"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "artifact_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Artifact Ids",
+          "type": "array"
+        },
+        "blockers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Blockers",
+          "type": "array"
+        },
+        "decision": {
+          "enum": [
+            "pass",
+            "conditional_pass",
+            "review",
+            "fail"
+          ],
+          "title": "Decision",
+          "type": "string"
+        },
+        "evidence_gaps": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Gaps",
+          "type": "array"
+        },
+        "gate": {
+          "minLength": 1,
+          "title": "Gate",
+          "type": "string"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "gate",
+        "decision",
+        "action"
+      ],
+      "title": "GateRecord",
+      "type": "object"
+    },
+    "StageHandoff": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Artifact Ids",
+          "type": "array"
+        },
+        "checks_completed": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Checks Completed",
+          "type": "array"
+        },
+        "constraints": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Constraints",
+          "type": "array"
+        },
+        "next_stage": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Next Stage"
+        },
+        "open_questions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Open Questions",
+          "type": "array"
+        },
+        "primary_decision": {
+          "minLength": 1,
+          "title": "Primary Decision",
+          "type": "string"
+        },
+        "stage": {
+          "minLength": 1,
+          "title": "Stage",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "ready",
+            "needs_input",
+            "blocked",
+            "complete"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "stage",
+        "status",
+        "primary_decision"
+      ],
+      "title": "StageHandoff",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "default": "hold",
+      "enum": [
+        "promote",
+        "hold",
+        "downgrade",
+        "reject",
+        "pause",
+        "retire"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "baseline_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Baseline Id"
+    },
+    "blockers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Blockers",
+      "type": "array"
+    },
+    "claim_side": {
+      "minLength": 1,
+      "title": "Claim Side",
+      "type": "string"
+    },
+    "claim_strength": {
+      "default": "not_determinable",
+      "enum": [
+        "not_determinable",
+        "research_only",
+        "validated_component",
+        "portfolio_candidate",
+        "paper_candidate",
+        "production_candidate"
+      ],
+      "title": "Claim Strength",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "decision": {
+      "default": "review",
+      "enum": [
+        "pass",
+        "conditional_pass",
+        "review",
+        "fail"
+      ],
+      "title": "Decision",
+      "type": "string"
+    },
+    "decision_changers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decision Changers",
+      "type": "array"
+    },
+    "defect_class": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Defect Class"
+    },
+    "evidence_gaps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Gaps",
+      "type": "array"
+    },
+    "experiments": {
+      "items": {
+        "$ref": "#/$defs/ExperimentRecord"
+      },
+      "title": "Experiments",
+      "type": "array"
+    },
+    "gates": {
+      "items": {
+        "$ref": "#/$defs/GateRecord"
+      },
+      "title": "Gates",
+      "type": "array"
+    },
+    "handoffs": {
+      "items": {
+        "$ref": "#/$defs/StageHandoff"
+      },
+      "title": "Handoffs",
+      "type": "array"
+    },
+    "input_artifact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Input Artifact Ids",
+      "type": "array"
+    },
+    "object_type": {
+      "minLength": 1,
+      "title": "Object Type",
+      "type": "string"
+    },
+    "observed_phenomena": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Observed Phenomena",
+      "type": "array"
+    },
+    "output_artifact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Artifact Ids",
+      "type": "array"
+    },
+    "provenance": {
+      "additionalProperties": true,
+      "title": "Provenance",
+      "type": "object"
+    },
+    "references_used": {
+      "items": {
+        "type": "string"
+      },
+      "title": "References Used",
+      "type": "array"
+    },
+    "rejected_variants": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Rejected Variants",
+      "type": "array"
+    },
+    "run_id": {
+      "minLength": 1,
+      "title": "Run Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "stage": {
+      "default": "idea",
+      "enum": [
+        "idea",
+        "research_candidate",
+        "validated_component",
+        "portfolio_candidate",
+        "paper_trading",
+        "production_candidate",
+        "live_monitoring",
+        "retired"
+      ],
+      "title": "Stage",
+      "type": "string"
+    },
+    "task_type": {
+      "minLength": 1,
+      "title": "Task Type",
+      "type": "string"
+    },
+    "timing": {
+      "additionalProperties": true,
+      "title": "Timing",
+      "type": "object"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_id",
+    "task_type",
+    "object_type",
+    "claim_side"
+  ],
+  "title": "RunRecord",
+  "type": "object"
+}

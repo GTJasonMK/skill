@@ -1,0 +1,56 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "environment": {
+      "minLength": 1,
+      "title": "Environment",
+      "type": "string"
+    },
+    "evaluated_at": {
+      "minLength": 1,
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "lookback": {
+      "default": "1h",
+      "title": "Lookback",
+      "type": "string"
+    },
+    "maximum_synthetic_latency_ms": {
+      "default": 500.0,
+      "minimum": 0,
+      "title": "Maximum Synthetic Latency Ms",
+      "type": "number"
+    },
+    "minimum_dependency_redundancy": {
+      "default": 2,
+      "minimum": 1,
+      "title": "Minimum Dependency Redundancy",
+      "type": "integer"
+    },
+    "minimum_probe_success_fraction": {
+      "default": 0.99,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Minimum Probe Success Fraction",
+      "type": "number"
+    },
+    "required_service_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Required Service Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "required_service_ids",
+    "environment",
+    "evaluated_at"
+  ],
+  "title": "DependencyHealthParameters",
+  "type": "object",
+  "x-diagnostic-id": "dependency-health",
+  "x-manifest-stage": "monitoring"
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Open tax lots with acquisition time, remaining quantity, and cost basis.",
+  "properties": {
+    "acquired_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "cost_price": {
+      "type": "number",
+      "x-unit": "price"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "lot_id": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number",
+      "x-unit": "quantity"
+    }
+  },
+  "required": [
+    "lot_id",
+    "asset_id",
+    "acquired_at",
+    "quantity",
+    "cost_price",
+    "currency"
+  ],
+  "title": "tax_lots",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "lot_id"
+  ],
+  "x-timestamp-fields": [
+    "acquired_at"
+  ]
+}

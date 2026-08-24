@@ -1,0 +1,93 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "annualization": {
+      "default": 252.0,
+      "exclusiveMinimum": 0,
+      "title": "Annualization",
+      "type": "number"
+    },
+    "decay": {
+      "default": 0.94,
+      "exclusiveMaximum": 1,
+      "exclusiveMinimum": 0,
+      "title": "Decay",
+      "type": "number"
+    },
+    "estimator": {
+      "default": "sample",
+      "enum": [
+        "sample",
+        "ewma",
+        "ledoit_wolf",
+        "regime"
+      ],
+      "title": "Estimator",
+      "type": "string"
+    },
+    "label": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Label"
+    },
+    "return_basis": {
+      "anyOf": [
+        {
+          "enum": [
+            "gross",
+            "excess"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Return Basis"
+    },
+    "shrinkage_target": {
+      "default": "constant_correlation",
+      "enum": [
+        "constant_correlation",
+        "diagonal_variance"
+      ],
+      "title": "Shrinkage Target",
+      "type": "string"
+    },
+    "stress_regime": {
+      "default": "high",
+      "enum": [
+        "high",
+        "low"
+      ],
+      "title": "Stress Regime",
+      "type": "string"
+    },
+    "weight_type": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Weight Type"
+    }
+  },
+  "title": "CovarianceRiskParameters",
+  "type": "object",
+  "x-diagnostic-id": "covariance-risk",
+  "x-manifest-stage": "risk"
+}

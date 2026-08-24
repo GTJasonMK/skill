@@ -1,0 +1,388 @@
+{
+  "$defs": {
+    "CalendarSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "calendar_id": {
+          "minLength": 1,
+          "title": "Calendar Id",
+          "type": "string"
+        },
+        "sessions_source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "ID of the declared calendar_sessions data source for this calendar.",
+          "title": "Sessions Source"
+        },
+        "timezone": {
+          "minLength": 1,
+          "title": "Timezone",
+          "type": "string"
+        }
+      },
+      "required": [
+        "calendar_id",
+        "timezone"
+      ],
+      "title": "CalendarSpec",
+      "type": "object"
+    },
+    "DataSourceSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "column_mapping": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Column Mapping",
+          "type": "object"
+        },
+        "contract_version": {
+          "default": "1.0",
+          "title": "Contract Version",
+          "type": "string"
+        },
+        "credential_env": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Credential Env",
+          "type": "array"
+        },
+        "format": {
+          "enum": [
+            "csv",
+            "parquet",
+            "duckdb",
+            "sqlite",
+            "sql"
+          ],
+          "title": "Format",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "options": {
+          "additionalProperties": true,
+          "title": "Options",
+          "type": "object"
+        },
+        "table_type": {
+          "minLength": 1,
+          "title": "Table Type",
+          "type": "string"
+        },
+        "uri": {
+          "minLength": 1,
+          "title": "Uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "uri",
+        "format",
+        "table_type"
+      ],
+      "title": "DataSourceSpec",
+      "type": "object"
+    },
+    "DiagnosticSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "diagnostic_id": {
+          "minLength": 1,
+          "title": "Diagnostic Id",
+          "type": "string"
+        },
+        "input_sources": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Input Sources",
+          "type": "array"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "stage": {
+          "enum": [
+            "data",
+            "research",
+            "validation",
+            "portfolio",
+            "execution",
+            "risk",
+            "monitoring",
+            "governance",
+            "report"
+          ],
+          "title": "Stage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "diagnostic_id",
+        "stage",
+        "input_sources"
+      ],
+      "title": "DiagnosticSpec",
+      "type": "object"
+    },
+    "ExecutionSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "credential_storage": {
+          "const": false,
+          "default": false,
+          "title": "Credential Storage",
+          "type": "boolean"
+        },
+        "fund_transfer": {
+          "const": false,
+          "default": false,
+          "title": "Fund Transfer",
+          "type": "boolean"
+        },
+        "live_order_submission": {
+          "const": false,
+          "default": false,
+          "title": "Live Order Submission",
+          "type": "boolean"
+        },
+        "mode": {
+          "default": "offline_replay",
+          "enum": [
+            "offline_replay",
+            "paper_simulation"
+          ],
+          "title": "Mode",
+          "type": "string"
+        }
+      },
+      "title": "ExecutionSpec",
+      "type": "object"
+    },
+    "PipelineSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "cache": {
+          "default": true,
+          "title": "Cache",
+          "type": "boolean"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/DiagnosticSpec"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "fail_closed": {
+          "default": true,
+          "title": "Fail Closed",
+          "type": "boolean"
+        },
+        "required_diagnostics": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Diagnostics",
+          "type": "array"
+        },
+        "stages": {
+          "items": {
+            "enum": [
+              "data",
+              "research",
+              "validation",
+              "portfolio",
+              "execution",
+              "risk",
+              "monitoring",
+              "governance",
+              "report"
+            ],
+            "type": "string"
+          },
+          "title": "Stages",
+          "type": "array"
+        }
+      },
+      "title": "PipelineSpec",
+      "type": "object"
+    },
+    "ProjectSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_class": {
+          "default": "generic",
+          "enum": [
+            "equity",
+            "futures",
+            "options",
+            "fixed_income",
+            "fx",
+            "crypto",
+            "mixed",
+            "generic"
+          ],
+          "title": "Asset Class",
+          "type": "string"
+        },
+        "base_currency": {
+          "default": "USD",
+          "maxLength": 8,
+          "minLength": 3,
+          "title": "Base Currency",
+          "type": "string"
+        },
+        "benchmark": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Benchmark"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "ProjectSpec",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "calendar": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CalendarSpec"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "costs": {
+      "additionalProperties": true,
+      "title": "Costs",
+      "type": "object"
+    },
+    "data_sources": {
+      "items": {
+        "$ref": "#/$defs/DataSourceSpec"
+      },
+      "minItems": 1,
+      "title": "Data Sources",
+      "type": "array"
+    },
+    "execution": {
+      "$ref": "#/$defs/ExecutionSpec"
+    },
+    "labels": {
+      "additionalProperties": true,
+      "title": "Labels",
+      "type": "object"
+    },
+    "metadata": {
+      "additionalProperties": true,
+      "title": "Metadata",
+      "type": "object"
+    },
+    "monitoring": {
+      "additionalProperties": true,
+      "title": "Monitoring",
+      "type": "object"
+    },
+    "output_dir": {
+      "default": "runs",
+      "title": "Output Dir",
+      "type": "string"
+    },
+    "pipeline": {
+      "$ref": "#/$defs/PipelineSpec"
+    },
+    "portfolio": {
+      "additionalProperties": true,
+      "title": "Portfolio",
+      "type": "object"
+    },
+    "project": {
+      "$ref": "#/$defs/ProjectSpec"
+    },
+    "risk": {
+      "additionalProperties": true,
+      "title": "Risk",
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "seed": {
+      "default": 42,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "signals": {
+      "additionalProperties": true,
+      "title": "Signals",
+      "type": "object"
+    },
+    "universe": {
+      "additionalProperties": true,
+      "title": "Universe",
+      "type": "object"
+    },
+    "validation": {
+      "additionalProperties": true,
+      "title": "Validation",
+      "type": "object"
+    }
+  },
+  "required": [
+    "project",
+    "data_sources"
+  ],
+  "title": "RunManifest",
+  "type": "object"
+}

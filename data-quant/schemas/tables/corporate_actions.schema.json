@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Corporate actions with announcement, availability, and vendor revisions.",
+  "properties": {
+    "action_id": {
+      "type": "string"
+    },
+    "action_type": {
+      "type": "string"
+    },
+    "announced_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "effective_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "action_id",
+    "asset_id",
+    "action_type",
+    "announced_at",
+    "available_at",
+    "effective_at"
+  ],
+  "title": "corporate_actions",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "asset_id",
+    "action_id",
+    "available_at"
+  ],
+  "x-timestamp-fields": [
+    "announced_at",
+    "available_at",
+    "effective_at"
+  ]
+}

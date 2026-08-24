@@ -1,0 +1,133 @@
+schema_version: "1.0"
+sources:
+  - source_id: local-factor-book-summaries
+    source_kind: local_mirror
+    publisher: local source project
+    jurisdiction_or_venue: factor research and A-share examples
+    url_or_document: ../source/因子量化分析skill
+    authoring_path: ../source/因子量化分析skill/factor-quant-analysis
+    mirror_target: factor-quant-analysis
+    content_digest: sha256-tree-v1:e5da7074ff7a133355169365b3f1aa6198778fe4253060ad117acd20b8e57b73
+    effective_from: null
+    effective_to: null
+    accessed_at: "2026-08-15T08:06:01Z"
+    applies_to: factor-quant-analysis knowledge and source coverage
+    confidence: corroborated
+    notes: Book-derived guidance; current market rules still require official effective-dated sources.
+  - source_id: local-black-box-book-summaries
+    source_kind: local_mirror
+    publisher: local source project
+    jurisdiction_or_venue: general quant trading and US-centric HFT examples
+    url_or_document: ../source/量化交易skill
+    authoring_path: ../source/量化交易skill/quant-trading-black-box-analysis
+    mirror_target: quant-trading-black-box-analysis
+    content_digest: sha256-tree-v1:9dd70e621012d2e08fa8d1f35e14774159d4d8537b25d73ca0f393711e8e198b
+    effective_from: null
+    effective_to: null
+    accessed_at: "2026-08-15T08:06:01Z"
+    applies_to: quant-trading-black-box-analysis knowledge and source coverage
+    confidence: corroborated
+    notes: Conceptual source; exact venue rules require current official evidence.
+  - source_id: official-us-futures-position-limits
+    source_kind: official_snapshot
+    publisher: U.S. Government Publishing Office, Electronic Code of Federal Regulations
+    jurisdiction_or_venue: United States futures and commodity options
+    url_or_document: https://www.ecfr.gov/current/title-17/chapter-I/part-150
+    snapshot_path: references/official-sources/futures-position-limits.yaml
+    content_digest: sha256:f345cf144deeea76e784a16a0bbe2017c26582d875160ef2891c28a7ff22dde9
+    effective_from: "2026-08-15"
+    effective_to: null
+    accessed_at: "2026-08-15T12:41:53Z"
+    applies_to: effective-dated futures position-limit evidence boundaries
+    confidence: authoritative
+    notes: Normalized metadata and bounded claims only; current rule text remains authoritative.
+  - source_id: official-occ-options-disclosure
+    source_kind: official_snapshot
+    publisher: The Options Clearing Corporation
+    jurisdiction_or_venue: U.S. listed options
+    url_or_document: https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document
+    snapshot_path: references/official-sources/options-disclosure.yaml
+    content_digest: sha256:d1528dc64ca4be97dc56e4d90a52bbfeaf55053a5168f1c5c4579cdb7f8d6df6
+    effective_from: "2026-08-15"
+    effective_to: null
+    accessed_at: "2026-08-15T12:41:53Z"
+    applies_to: options exercise, assignment, writer-obligation, and risk evidence boundaries
+    confidence: authoritative
+    notes: Metadata-only snapshot because the official site rejected automated content retrieval.
+  - source_id: official-finra-trace
+    source_kind: official_snapshot
+    publisher: Financial Industry Regulatory Authority
+    jurisdiction_or_venue: U.S. fixed-income reporting and dissemination
+    url_or_document: https://www.finra.org/filing-reporting/trace
+    snapshot_path: references/official-sources/fixed-income-trace.yaml
+    content_digest: sha256:898c0c6c124f97a96400f2d2481808434caa9ee9a6cfff5cb3aac3ce7be548ce
+    effective_from: "2026-08-15"
+    effective_to: null
+    accessed_at: "2026-08-15T12:41:53Z"
+    applies_to: TRACE-derived fixed-income event-time and PIT-availability semantics
+    confidence: authoritative
+    notes: Normalized metadata and bounded claims only; current rules and specifications remain authoritative.
+  - source_id: official-cls-fx-settlement
+    source_kind: official_snapshot
+    publisher: CLS Group
+    jurisdiction_or_venue: eligible global FX settlement workflows
+    url_or_document: https://www.cls-group.com/news/tplus1/tplus1-settlement/
+    snapshot_path: references/official-sources/fx-cls-settlement.yaml
+    content_digest: sha256:b6cd0d6bf2c366c43f3b5157520b8999ea6f27fe164403ee080a972862a229c6
+    effective_from: "2026-08-15"
+    effective_to: null
+    accessed_at: "2026-08-15T12:41:53Z"
+    applies_to: FX settlement, funding, eligibility, and cutoff evidence boundaries
+    confidence: authoritative
+    notes: Normalized metadata and bounded claims only; current CLS operational documents remain authoritative.
+  - source_id: official-cftc-crypto-leverage-boundary
+    source_kind: official_snapshot
+    publisher: U.S. Commodity Futures Trading Commission
+    jurisdiction_or_venue: U.S. leveraged retail digital-asset commodity transactions
+    url_or_document: https://www.cftc.gov/PressRoom/PressReleases/8433-21
+    snapshot_path: references/official-sources/crypto-leverage-boundary.yaml
+    content_digest: sha256:3a60d17edcce7b7aa244d8d676961fd955c9d3dc545a097419c5b5643acbecb5
+    effective_from: "2026-08-15"
+    effective_to: null
+    accessed_at: "2026-08-15T12:41:53Z"
+    applies_to: crypto leverage jurisdiction, venue, registration, and offline-only evidence boundaries
+    confidence: authoritative
+    notes: Enforcement evidence is bounded and does not replace current rules, venue terms, or legal review.
+  - source_id: official-venue-product-rules
+    source_kind: official_snapshot
+    publisher: Exchange product specification boundary
+    jurisdiction_or_venue: venue- and product-level exchange operating rules
+    url_or_document: https://www.cmegroup.com/rulebook.html
+    snapshot_path: references/official-sources/venue-product-rules.yaml
+    content_digest: sha256:20de1ea9fee06da359accf198f5df47d4d3429acfe47e0c85f48a703148f8dc2
+    effective_from: "2026-08-15"
+    effective_to: null
+    accessed_at: "2026-08-15T12:41:53Z"
+    applies_to: product-level tick, session, delivery, and limit evidence boundaries
+    confidence: authoritative
+    notes: Metadata-only snapshot; current venue rulebooks remain authoritative.
+  - source_id: official-vendor-data-dictionary
+    source_kind: official_snapshot
+    publisher: Authorized vendor data-dictionary boundary
+    jurisdiction_or_venue: licensed vendor market-data field mappings
+    url_or_document: https://www.refinitiv.com/en/products/refinitiv-data-platform
+    snapshot_path: references/official-sources/vendor-data-dictionary.yaml
+    content_digest: sha256:9ce1e108fdf9ceb74d11cdc1f4bd8aec322bb54df3e07d242d290c4fcf501ef6
+    effective_from: "2026-08-15"
+    effective_to: null
+    accessed_at: "2026-08-15T12:41:53Z"
+    applies_to: vendor field, unit, and corporate-action mapping evidence boundaries
+    confidence: authoritative
+    notes: Metadata-only snapshot; licensed vendor dictionaries remain authoritative.
+  - source_id: shared-python-runtime
+    source_kind: local_file
+    publisher: local data-quant bundle
+    jurisdiction_or_venue: runtime
+    url_or_document: pylock.toml
+    content_digest: sha256:62f8ac253e473f1cb3aea8347f128372a725082a11ff7e4692d19249db61d5e9
+    effective_from: "2026-08-15"
+    effective_to: null
+    accessed_at: "2026-08-15T08:06:01Z"
+    applies_to: installed package and API versions
+    confidence: authoritative
+    notes: Exact resolved versions and wheel hashes are recorded in pylock.toml; project metadata and run provenance bind the runtime release.

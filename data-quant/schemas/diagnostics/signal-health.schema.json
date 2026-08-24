@@ -1,0 +1,86 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "evaluated_at": {
+      "minLength": 1,
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "label": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Label"
+    },
+    "max_rank_ic_degradation": {
+      "default": 0.1,
+      "maximum": 2,
+      "minimum": 0,
+      "title": "Max Rank Ic Degradation",
+      "type": "number"
+    },
+    "max_signal_age": {
+      "default": "2D",
+      "title": "Max Signal Age",
+      "type": "string"
+    },
+    "min_assets": {
+      "default": 5,
+      "minimum": 2,
+      "title": "Min Assets",
+      "type": "integer"
+    },
+    "min_baseline_periods": {
+      "default": 5,
+      "minimum": 1,
+      "title": "Min Baseline Periods",
+      "type": "integer"
+    },
+    "min_latest_std": {
+      "default": 1e-12,
+      "minimum": 0,
+      "title": "Min Latest Std",
+      "type": "number"
+    },
+    "min_recent_rank_ic": {
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": -1,
+      "title": "Min Recent Rank Ic",
+      "type": "number"
+    },
+    "recent_periods": {
+      "default": 3,
+      "minimum": 1,
+      "title": "Recent Periods",
+      "type": "integer"
+    },
+    "signal": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Signal"
+    }
+  },
+  "required": [
+    "evaluated_at"
+  ],
+  "title": "SignalHealthParameters",
+  "type": "object",
+  "x-diagnostic-id": "signal-health",
+  "x-manifest-stage": "monitoring"
+}

@@ -1,0 +1,50 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "bins": {
+      "default": 10,
+      "minimum": 2,
+      "title": "Bins",
+      "type": "integer"
+    },
+    "blocker_threshold": {
+      "default": 0.25,
+      "exclusiveMinimum": 0,
+      "title": "Blocker Threshold",
+      "type": "number"
+    },
+    "columns": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Columns",
+      "type": "array"
+    },
+    "current_source": {
+      "minLength": 1,
+      "title": "Current Source",
+      "type": "string"
+    },
+    "reference_source": {
+      "minLength": 1,
+      "title": "Reference Source",
+      "type": "string"
+    },
+    "warning_threshold": {
+      "default": 0.1,
+      "minimum": 0,
+      "title": "Warning Threshold",
+      "type": "number"
+    }
+  },
+  "required": [
+    "reference_source",
+    "current_source",
+    "columns"
+  ],
+  "title": "FeatureDriftParameters",
+  "type": "object",
+  "x-diagnostic-id": "feature-drift",
+  "x-manifest-stage": "monitoring"
+}

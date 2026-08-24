@@ -1,0 +1,108 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "annualization": {
+      "default": 252,
+      "minimum": 1,
+      "title": "Annualization",
+      "type": "integer"
+    },
+    "cash_rate_annual": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Cash Rate Annual",
+      "type": "number"
+    },
+    "collateralization_ratio": {
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Collateralization Ratio",
+      "type": "number"
+    },
+    "cost_bps_per_one_way_turnover": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Cost Bps Per One Way Turnover",
+      "type": "number"
+    },
+    "financing_convexity_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Financing Convexity Bps",
+      "type": "number"
+    },
+    "financing_curve_id": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Financing Curve Id"
+    },
+    "financing_rate_annual": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Financing Rate Annual",
+      "type": "number"
+    },
+    "initial_nav": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Initial Nav",
+      "type": "number"
+    },
+    "label": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Label"
+    },
+    "risk_free_annual": {
+      "default": 0.0,
+      "title": "Risk Free Annual",
+      "type": "number"
+    },
+    "secured_financing_spread_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Secured Financing Spread Bps",
+      "type": "number"
+    },
+    "short_borrow_rate_annual": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Short Borrow Rate Annual",
+      "type": "number"
+    },
+    "weight_type": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Weight Type"
+    }
+  },
+  "title": "PortfolioBacktestParameters",
+  "type": "object",
+  "x-diagnostic-id": "portfolio-backtest",
+  "x-manifest-stage": "portfolio"
+}

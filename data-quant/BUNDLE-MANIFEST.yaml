@@ -1,0 +1,59 @@
+schema_version: "1.0"
+bundle:
+  id: data-quant-hybrid
+  version: 1.0.0
+  canonical_entry: SKILL.md
+  offline_execution_only: true
+children:
+  - id: statistical-learning-analysis
+    path: statistical-learning-analysis/SKILL.md
+    role: general statistical methodology and bundled diagnostics
+    status: active
+  - id: factor-quant-analysis
+    path: factor-quant-analysis/SKILL.md
+    role: equity factor and A-share domain workflow
+    status: active
+  - id: quant-trading-black-box-analysis
+    path: quant-trading-black-box-analysis/SKILL.md
+    role: strategy components, execution, HFT, risk, and diligence
+    status: active
+  - id: quant-data-engineering
+    path: quant-data-engineering/SKILL.md
+    role: canonical tables, identifiers, calendars, point-in-time data, and labels
+    status: active
+  - id: futures-quant-analysis
+    path: futures-quant-analysis/SKILL.md
+    role: futures contracts, rolling, margin, basis, and execution
+    status: active
+  - id: options-volatility-analysis
+    path: options-volatility-analysis/SKILL.md
+    role: options chains, volatility surfaces, Greeks, margin, and PnL
+    status: active
+  - id: fixed-income-quant-analysis
+    path: fixed-income-quant-analysis/SKILL.md
+    role: curves, cashflows, duration, credit, carry, and stress
+    status: active
+  - id: fx-quant-analysis
+    path: fx-quant-analysis/SKILL.md
+    role: spot, forwards, carry, settlement, and currency risk
+    status: active
+  - id: crypto-quant-analysis
+    path: crypto-quant-analysis/SKILL.md
+    role: spot, perpetuals, funding, liquidation, and venue risk
+    status: active
+contracts:
+  manifest: schemas/run-manifest.schema.json
+  artifact: schemas/artifact-envelope.schema.json
+  run_record: schemas/run-record.schema.json
+  stage_gate: schemas/stage-gate.schema.json
+runtime:
+  project: pyproject.toml
+  lock: pylock.toml
+  package: src/data_quant
+  cli: quantctl
+  distribution_scope: runtime_only
+  legacy_execution_requires_full_bundle: true
+prohibited_capabilities:
+  - live_order_submission
+  - fund_transfer
+  - credential_storage

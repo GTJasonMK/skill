@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT offline American option exercise or assignment events.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "event_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "option_id": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "underlying_price": {
+      "type": "number",
+      "x-unit": "price"
+    }
+  },
+  "required": [
+    "option_id",
+    "event_at",
+    "available_at",
+    "event_type",
+    "quantity",
+    "underlying_price",
+    "currency"
+  ],
+  "title": "option_exercise_events",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "option_id",
+    "event_at",
+    "event_type"
+  ],
+  "x-timestamp-fields": [
+    "event_at",
+    "available_at"
+  ]
+}

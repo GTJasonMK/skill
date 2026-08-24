@@ -1,0 +1,58 @@
+name: data-quant
+
+on:
+  push:
+    paths:
+      - "data-quant/**"
+      - ".github/workflows/data-quant.yml"
+  pull_request:
+    paths:
+      - "data-quant/**"
+      - ".github/workflows/data-quant.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.14"]
+    defaults:
+      run:
+        working-directory: data-quant
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install bundle and development dependencies
+        run: python -m pip install -e '.[all,dev]'
+      - name: Remove generated build metadata before bundle verification
+        run: rm -rf src/*.egg-info build dist
+      - name: Verify committed schemas and bundle
+        run: python scripts/check_bundle.py
+      - name: Lint core, tooling, and tests
+        run: ruff check src scripts tests
+      - name: Check legacy scripts for critical Python errors
+        run: ruff check statistical-learning-analysis/scripts --select E9,F63,F7,F82
+      - name: Enforce offline-only capability boundary
+        run: python scripts/check_no_live.py
+      - name: Type check on canonical environment
+        if: matrix.python-version == '3.14'
+        run: mypy src/data_quant
+      - name: Test core and source bundle
+        run: pytest -q --ignore=tests/integration/test_wheel_distribution.py
+      - name: Build, install, and smoke-test the runtime wheel
+        if: matrix.python-version == '3.14'
+        run: pytest -q tests/integration/test_wheel_distribution.py
+      - name: Check source mirrors
+        run: python scripts/sync_source_skills.py
+      - name: Check legacy Skill on Python 3.11
+        if: matrix.python-version == '3.11'
+        run: bash statistical-learning-analysis/scripts/smoke_check.sh --quick
+      - name: Run full legacy and example acceptance on Python 3.14
+        if: matrix.python-version == '3.14'
+        env:
+          DATA_QUANT_EXAMPLE_OUT: ${{ runner.temp }}/data-quant-examples
+        run: bash statistical-learning-analysis/scripts/smoke_check.sh --full

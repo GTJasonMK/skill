@@ -1,0 +1,41 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "label": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Label"
+    },
+    "min_assets": {
+      "default": 5,
+      "minimum": 2,
+      "title": "Min Assets",
+      "type": "integer"
+    },
+    "signal": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Signal"
+    }
+  },
+  "title": "FactorICParameters",
+  "type": "object",
+  "x-diagnostic-id": "factor-ic",
+  "x-manifest-stage": "research"
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Realized factor returns aligned to one explicit attribution window.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "factor_id": {
+      "type": "string"
+    },
+    "factor_model_id": {
+      "type": "string"
+    },
+    "return_basis": {
+      "type": "string"
+    },
+    "return_end": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "return_start": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "return_type": {
+      "type": "string"
+    },
+    "return_value": {
+      "type": "number",
+      "x-unit": "decimal_return"
+    }
+  },
+  "required": [
+    "factor_model_id",
+    "factor_id",
+    "return_start",
+    "return_end",
+    "available_at",
+    "return_value",
+    "return_type",
+    "return_basis",
+    "currency"
+  ],
+  "title": "factor_returns",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "factor_model_id",
+    "return_start",
+    "return_end",
+    "factor_id"
+  ],
+  "x-timestamp-fields": [
+    "return_start",
+    "return_end",
+    "available_at"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "annualization": {
+      "default": 12,
+      "minimum": 1,
+      "title": "Annualization",
+      "type": "integer"
+    },
+    "features": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Features"
+    },
+    "intercept": {
+      "default": true,
+      "title": "Intercept",
+      "type": "boolean"
+    },
+    "label": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Label"
+    },
+    "min_assets": {
+      "default": 5,
+      "minimum": 2,
+      "title": "Min Assets",
+      "type": "integer"
+    }
+  },
+  "title": "FamaMacBethParameters",
+  "type": "object",
+  "x-diagnostic-id": "fama-macbeth",
+  "x-manifest-stage": "research"
+}

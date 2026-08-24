@@ -1,0 +1,58 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "allow_american_exercise": {
+      "default": false,
+      "title": "Allow American Exercise",
+      "type": "boolean"
+    },
+    "dividend_yield": {
+      "default": 0.0,
+      "title": "Dividend Yield",
+      "type": "number"
+    },
+    "hedge_fill_mode": {
+      "default": "mid",
+      "enum": [
+        "mid",
+        "bid_ask"
+      ],
+      "title": "Hedge Fill Mode",
+      "type": "string"
+    },
+    "max_spread_fraction": {
+      "default": 0.2,
+      "exclusiveMinimum": 0,
+      "title": "Max Spread Fraction",
+      "type": "number"
+    },
+    "option_id": {
+      "minLength": 1,
+      "title": "Option Id",
+      "type": "string"
+    },
+    "option_quantity": {
+      "title": "Option Quantity",
+      "type": "number"
+    },
+    "risk_free_rate": {
+      "default": 0.0,
+      "title": "Risk Free Rate",
+      "type": "number"
+    },
+    "transaction_cost_bps": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Transaction Cost Bps",
+      "type": "number"
+    }
+  },
+  "required": [
+    "option_id",
+    "option_quantity"
+  ],
+  "title": "OptionHedgeReplayParameters",
+  "type": "object",
+  "x-diagnostic-id": "option-hedge-replay",
+  "x-manifest-stage": "risk"
+}

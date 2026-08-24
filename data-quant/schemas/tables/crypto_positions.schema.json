@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time venue-account positions with entry prices for offline stress.",
+  "properties": {
+    "account_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "entry_price": {
+      "type": "number"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "signed_quantity": {
+      "type": "number"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "observed_at",
+    "available_at",
+    "venue",
+    "account_id",
+    "instrument_id",
+    "signed_quantity",
+    "entry_price"
+  ],
+  "title": "crypto_positions",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "observed_at",
+    "venue",
+    "account_id",
+    "instrument_id"
+  ],
+  "x-timestamp-fields": [
+    "observed_at",
+    "available_at"
+  ]
+}

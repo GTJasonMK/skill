@@ -1,0 +1,17 @@
+schema_version: "1.0"
+source_id: official-vendor-data-dictionary
+publisher: Authorized vendor data-dictionary boundary
+url: https://www.refinitiv.com/en/products/refinitiv-data-platform
+accessed_at: "2026-08-15T12:41:53Z"
+effective_from: "2026-08-15"
+effective_to: null
+retrieval:
+  status: metadata_only
+claims:
+  - claim_id: vendor-fields-need-dictionary
+    summary: Vendor field names, units, and corporate-action adjustments change by product and feed version.
+    implementation_use: Fail closed unless an authorized, effective-dated vendor data dictionary snapshot is bound before mapping vendor columns to canonical tables.
+    requires_fresh_check: true
+limitations:
+  - This card freezes no vendor field list, unit, or adjustment policy.
+  - Licensed vendor documentation remains authoritative.

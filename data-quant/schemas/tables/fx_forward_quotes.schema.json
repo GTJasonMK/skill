@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Timestamped outright or decimal-points FX forward bid/ask quotes.",
+  "properties": {
+    "ask": {
+      "type": "number"
+    },
+    "base_currency": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "number"
+    },
+    "quote_currency": {
+      "type": "string"
+    },
+    "quote_type": {
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "value_date": {
+      "format": "date",
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "timestamp",
+    "value_date",
+    "base_currency",
+    "quote_currency",
+    "bid",
+    "ask",
+    "quote_type",
+    "venue"
+  ],
+  "title": "fx_forward_quotes",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "timestamp",
+    "value_date",
+    "base_currency",
+    "quote_currency",
+    "venue"
+  ],
+  "x-timestamp-fields": [
+    "timestamp"
+  ]
+}

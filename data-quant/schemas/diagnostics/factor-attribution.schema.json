@@ -1,0 +1,69 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "decision_at": {
+      "minLength": 1,
+      "title": "Decision At",
+      "type": "string"
+    },
+    "evaluated_at": {
+      "minLength": 1,
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "factor_exposure_limits": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Factor Exposure Limits",
+      "type": "object"
+    },
+    "factor_model_id": {
+      "minLength": 1,
+      "title": "Factor Model Id",
+      "type": "string"
+    },
+    "gross_exposure_limit": {
+      "default": 2.0,
+      "exclusiveMinimum": 0,
+      "title": "Gross Exposure Limit",
+      "type": "number"
+    },
+    "label": {
+      "minLength": 1,
+      "title": "Label",
+      "type": "string"
+    },
+    "return_basis": {
+      "default": "gross",
+      "enum": [
+        "gross",
+        "excess"
+      ],
+      "title": "Return Basis",
+      "type": "string"
+    },
+    "specific_contribution_limit": {
+      "default": 0.05,
+      "minimum": 0,
+      "title": "Specific Contribution Limit",
+      "type": "number"
+    },
+    "weight_type": {
+      "minLength": 1,
+      "title": "Weight Type",
+      "type": "string"
+    }
+  },
+  "required": [
+    "factor_model_id",
+    "decision_at",
+    "evaluated_at",
+    "label",
+    "weight_type"
+  ],
+  "title": "FactorAttributionParameters",
+  "type": "object",
+  "x-diagnostic-id": "factor-attribution",
+  "x-manifest-stage": "risk"
+}

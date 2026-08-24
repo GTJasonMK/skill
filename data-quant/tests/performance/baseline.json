@@ -1,0 +1,13 @@
+{
+  "benchmark": "canonical_factor_panel_validation",
+  "rows": 1000000,
+  "assets": 1000,
+  "periods": 1000,
+  "python": "3.14.6",
+  "pandas": "3.0.5",
+  "numpy": "2.5.2",
+  "elapsed_seconds_observed": 0.36409492199891247,
+  "max_rss_mb_observed": 277.78515625,
+  "acceptance_max_rss_mb": 4096.0,
+  "regression_warning_fraction": 0.2
+}

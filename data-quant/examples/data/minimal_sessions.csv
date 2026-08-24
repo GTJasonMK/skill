@@ -1,0 +1,3 @@
+calendar_id,session,timezone,open_at,close_at,is_half_day
+example-business-days,2024-01-02,Asia/Shanghai,2024-01-02T01:30:00Z,2024-01-02T07:00:00Z,false
+example-business-days,2024-01-03,Asia/Shanghai,2024-01-03T01:30:00Z,2024-01-03T07:00:00Z,false

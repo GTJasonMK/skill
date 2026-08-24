@@ -1,0 +1,25 @@
+schema_version: "1.0"
+project:
+  name: minimal-equity-example
+  asset_class: equity
+  base_currency: CNY
+data_sources:
+  - id: bars
+    uri: ../data/minimal_bars.csv
+    format: csv
+    table_type: market_bars
+  - id: sessions
+    uri: ../data/minimal_sessions.csv
+    format: csv
+    table_type: calendar_sessions
+calendar:
+  calendar_id: example-business-days
+  timezone: Asia/Shanghai
+  sessions_source: sessions
+pipeline:
+  stages: [data, report]
+  required_diagnostics: []
+  fail_closed: true
+  cache: true
+output_dir: runs/minimal-equity-example
+seed: 42

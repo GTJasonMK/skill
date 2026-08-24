@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Effective-dated permanent identifiers and tradable symbols.",
+  "properties": {
+    "asset_class": {
+      "type": "string"
+    },
+    "asset_id": {
+      "description": "Permanent instrument identifier.",
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "effective_to": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "asset_id",
+    "symbol",
+    "venue",
+    "asset_class",
+    "currency",
+    "effective_from"
+  ],
+  "title": "security_master",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "asset_id",
+    "effective_from"
+  ],
+  "x-timestamp-fields": [
+    "effective_from",
+    "effective_to"
+  ]
+}

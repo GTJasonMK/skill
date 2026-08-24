@@ -1,0 +1,59 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "dividend_yield": {
+      "default": 0.0,
+      "title": "Dividend Yield",
+      "type": "number"
+    },
+    "expiry_at": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Expiry At"
+    },
+    "parity_tolerance": {
+      "default": 0.01,
+      "minimum": 0,
+      "title": "Parity Tolerance",
+      "type": "number"
+    },
+    "risk_free_rate": {
+      "default": 0.0,
+      "title": "Risk Free Rate",
+      "type": "number"
+    },
+    "spot": {
+      "exclusiveMinimum": 0,
+      "title": "Spot",
+      "type": "number"
+    },
+    "underlying_id": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Underlying Id"
+    }
+  },
+  "required": [
+    "spot"
+  ],
+  "title": "OptionSurfaceParameters",
+  "type": "object",
+  "x-diagnostic-id": "option-surface-check",
+  "x-manifest-stage": "risk"
+}

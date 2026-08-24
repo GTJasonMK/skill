@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "evaluated_at": {
+      "minLength": 1,
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "max_approval_age": {
+      "default": "365D",
+      "title": "Max Approval Age",
+      "type": "string"
+    },
+    "max_card_age": {
+      "default": "365D",
+      "title": "Max Card Age",
+      "type": "string"
+    },
+    "require_authoritative": {
+      "default": true,
+      "title": "Require Authoritative",
+      "type": "boolean"
+    },
+    "require_change_approval": {
+      "default": false,
+      "title": "Require Change Approval",
+      "type": "boolean"
+    },
+    "required_source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Required Source Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "required_source_ids",
+    "evaluated_at"
+  ],
+  "title": "SourceRuleFreshnessParameters",
+  "type": "object",
+  "x-diagnostic-id": "source-rule-freshness",
+  "x-manifest-stage": "governance"
+}

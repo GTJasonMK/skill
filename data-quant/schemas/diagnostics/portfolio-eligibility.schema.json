@@ -1,0 +1,55 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "label": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Label"
+    },
+    "require_borrow_for_shorts": {
+      "const": true,
+      "default": true,
+      "title": "Require Borrow For Shorts",
+      "type": "boolean"
+    },
+    "require_total_return": {
+      "const": true,
+      "default": true,
+      "title": "Require Total Return",
+      "type": "boolean"
+    },
+    "universe_id": {
+      "minLength": 1,
+      "title": "Universe Id",
+      "type": "string"
+    },
+    "weight_type": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Weight Type"
+    }
+  },
+  "required": [
+    "universe_id"
+  ],
+  "title": "PortfolioEligibilityParameters",
+  "type": "object",
+  "x-diagnostic-id": "portfolio-eligibility",
+  "x-manifest-stage": "portfolio"
+}

@@ -1,0 +1,79 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "holding_period": {
+      "default": "1D",
+      "title": "Holding Period",
+      "type": "string"
+    },
+    "max_quote_age": {
+      "default": "1D",
+      "title": "Max Quote Age",
+      "type": "string"
+    },
+    "maximum_blended_fee_annual": {
+      "default": 1.0,
+      "minimum": 0,
+      "title": "Maximum Blended Fee Annual",
+      "type": "number"
+    },
+    "maximum_lender_concentration": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "title": "Maximum Lender Concentration",
+      "type": "number"
+    },
+    "minimum_borrow_buffer": {
+      "default": 1.0,
+      "minimum": 1,
+      "title": "Minimum Borrow Buffer",
+      "type": "number"
+    },
+    "portfolio_value": {
+      "exclusiveMinimum": 0,
+      "title": "Portfolio Value",
+      "type": "number"
+    },
+    "unscheduled_recall_fraction": {
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Unscheduled Recall Fraction",
+      "type": "number"
+    },
+    "venue": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Venue"
+    },
+    "weight_type": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Weight Type"
+    }
+  },
+  "required": [
+    "portfolio_value"
+  ],
+  "title": "ShortBorrowCapacityParameters",
+  "type": "object",
+  "x-diagnostic-id": "short-borrow-capacity",
+  "x-manifest-stage": "portfolio"
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "PIT exchange or venue position limits per futures contract.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "contract_id": {
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "limit_source": {
+      "type": "string"
+    },
+    "max_contracts": {
+      "type": "number"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "venue",
+    "contract_id",
+    "effective_from",
+    "available_at",
+    "max_contracts",
+    "limit_source"
+  ],
+  "title": "futures_position_limits",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "venue",
+    "contract_id",
+    "effective_from"
+  ],
+  "x-timestamp-fields": [
+    "effective_from",
+    "available_at"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Effective-dated service dependency graph and recovery objectives.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "depends_on": {
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "effective_to": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "environment": {
+      "type": "string"
+    },
+    "recovery_point_objective": {
+      "type": "number",
+      "x-unit": "seconds"
+    },
+    "recovery_time_objective": {
+      "type": "number",
+      "x-unit": "seconds"
+    },
+    "region": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "service_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "service_id",
+    "environment",
+    "depends_on",
+    "effective_from",
+    "available_at",
+    "recovery_time_objective",
+    "recovery_point_objective"
+  ],
+  "title": "service_dependencies",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "service_id",
+    "environment",
+    "depends_on",
+    "effective_from"
+  ],
+  "x-timestamp-fields": [
+    "effective_from",
+    "effective_to",
+    "available_at"
+  ]
+}

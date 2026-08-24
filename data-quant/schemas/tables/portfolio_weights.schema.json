@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Decision-timestamped target or actual portfolio weights.",
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "decision_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "nav": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "currency"
+    },
+    "weight": {
+      "type": "number",
+      "x-unit": "fraction_of_nav"
+    },
+    "weight_type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "decision_at",
+    "asset_id",
+    "weight",
+    "weight_type",
+    "currency"
+  ],
+  "title": "portfolio_weights",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "decision_at",
+    "asset_id",
+    "weight_type"
+  ],
+  "x-timestamp-fields": [
+    "decision_at"
+  ]
+}

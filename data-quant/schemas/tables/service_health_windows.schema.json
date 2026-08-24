@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Observable service availability, traffic, error, and latency windows.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "environment": {
+      "type": "string"
+    },
+    "error_count": {
+      "type": "integer"
+    },
+    "latency_p95_ms": {
+      "type": "number",
+      "x-unit": "milliseconds"
+    },
+    "request_count": {
+      "type": "integer"
+    },
+    "service_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "uptime_fraction": {
+      "type": "number"
+    },
+    "window_end": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "window_start": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [
+    "service_id",
+    "environment",
+    "window_start",
+    "window_end",
+    "available_at",
+    "status",
+    "request_count",
+    "error_count",
+    "uptime_fraction",
+    "latency_p95_ms"
+  ],
+  "title": "service_health_windows",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "service_id",
+    "environment",
+    "window_start",
+    "window_end"
+  ],
+  "x-timestamp-fields": [
+    "window_start",
+    "window_end",
+    "available_at"
+  ]
+}

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+source_id: official-occ-options-disclosure
+publisher: The Options Clearing Corporation
+url: https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document
+accessed_at: "2026-08-15T12:41:53Z"
+effective_from: "2026-08-15"
+effective_to: null
+retrieval:
+  status: metadata_only
+  media_type: text/html
+  response_digest: null
+claims:
+  - claim_id: options-exercise-assignment-require-current-disclosure
+    summary: Exercise, assignment, writer obligations, and option risks must be interpreted against the current OCC Options Disclosure Document and applicable supplements.
+    implementation_use: Keep American exercise, assignment, settlement, and writer-obligation modeling blocked until current product-specific terms are supplied.
+    requires_fresh_check: true
+limitations:
+  - The official site rejected automated content retrieval; only normalized discovery metadata is frozen.
+  - This card contains no contract-specific exercise cutoff, settlement, margin, or corporate-action rule.

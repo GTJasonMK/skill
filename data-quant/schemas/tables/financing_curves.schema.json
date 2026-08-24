@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time cash-deposit and unsecured-financing simple annual-rate curves.",
+  "properties": {
+    "annual_rate": {
+      "type": "number",
+      "x-unit": "decimal_rate"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "compounding": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "curve_id": {
+      "type": "string"
+    },
+    "day_count_basis": {
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "effective_to": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rate_type": {
+      "type": "string"
+    },
+    "tenor_days": {
+      "type": "integer",
+      "x-unit": "calendar_days"
+    }
+  },
+  "required": [
+    "curve_id",
+    "currency",
+    "rate_type",
+    "effective_from",
+    "available_at",
+    "tenor_days",
+    "annual_rate",
+    "day_count_basis",
+    "compounding"
+  ],
+  "title": "financing_curves",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "curve_id",
+    "currency",
+    "rate_type",
+    "effective_from",
+    "tenor_days"
+  ],
+  "x-timestamp-fields": [
+    "effective_from",
+    "effective_to",
+    "available_at"
+  ]
+}

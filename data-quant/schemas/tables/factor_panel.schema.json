@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time factor values keyed by decision timestamp and asset.",
+  "properties": {
+    "as_of": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "signal": {
+      "type": "string"
+    },
+    "transform_chain": {},
+    "value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "as_of",
+    "asset_id",
+    "signal",
+    "value",
+    "available_at"
+  ],
+  "title": "factor_panel",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "as_of",
+    "asset_id",
+    "signal"
+  ],
+  "x-timestamp-fields": [
+    "as_of",
+    "available_at"
+  ]
+}

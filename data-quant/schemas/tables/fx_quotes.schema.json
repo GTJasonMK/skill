@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Timestamped FX quotes stored as quote currency per base currency.",
+  "properties": {
+    "ask": {
+      "type": "number"
+    },
+    "base_currency": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "number"
+    },
+    "quote_currency": {
+      "type": "string"
+    },
+    "spot_date": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "timestamp",
+    "base_currency",
+    "quote_currency",
+    "bid",
+    "ask",
+    "venue",
+    "spot_date"
+  ],
+  "title": "fx_quotes",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "timestamp",
+    "base_currency",
+    "quote_currency",
+    "venue"
+  ],
+  "x-timestamp-fields": [
+    "timestamp",
+    "spot_date"
+  ]
+}

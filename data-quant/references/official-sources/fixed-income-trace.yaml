@@ -1,0 +1,19 @@
+schema_version: "1.0"
+source_id: official-finra-trace
+publisher: Financial Industry Regulatory Authority
+url: https://www.finra.org/filing-reporting/trace
+accessed_at: "2026-08-15T12:41:53Z"
+effective_from: "2026-08-15"
+effective_to: null
+retrieval:
+  status: retrieved
+  media_type: text/html
+  response_digest: sha256:8673498cfc8d743ea079187ec58df12e8be1e9ad2be2be0d4536a6a0dba02543
+claims:
+  - claim_id: trace-report-and-availability-times-are-distinct
+    summary: TRACE is FINRA's fixed-income trade reporting and dissemination facility; report, receipt, correction, and public availability times are distinct data semantics.
+    implementation_use: Preserve event time and PIT availability separately when adapting TRACE-derived fixed-income observations.
+    requires_fresh_check: true
+limitations:
+  - This card freezes no security eligibility, reporting deadline, dissemination cap, or correction rule.
+  - Current FINRA rules, notices, technical specifications, and vendor licenses remain authoritative.

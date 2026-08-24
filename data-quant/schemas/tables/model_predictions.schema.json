@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Point-in-time model predictions aligned to an asset decision and target label.",
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "decision_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "model_version": {
+      "type": "string"
+    },
+    "prediction": {
+      "type": "number"
+    },
+    "prediction_type": {
+      "type": "string"
+    },
+    "target_label": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "decision_at",
+    "available_at",
+    "model_id",
+    "model_version",
+    "asset_id",
+    "target_label",
+    "prediction",
+    "prediction_type"
+  ],
+  "title": "model_predictions",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "x-primary-key": [
+    "decision_at",
+    "model_id",
+    "model_version",
+    "asset_id",
+    "target_label"
+  ],
+  "x-timestamp-fields": [
+    "decision_at",
+    "available_at"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "bins": {
+      "default": 10,
+      "minimum": 2,
+      "title": "Bins",
+      "type": "integer"
+    },
+    "bootstrap_confidence": {
+      "default": 0.9,
+      "exclusiveMaximum": 1,
+      "exclusiveMinimum": 0.5,
+      "title": "Bootstrap Confidence",
+      "type": "number"
+    },
+    "bootstrap_resamples": {
+      "default": 200,
+      "minimum": 50,
+      "title": "Bootstrap Resamples",
+      "type": "integer"
+    },
+    "evaluated_at": {
+      "minLength": 1,
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "label": {
+      "minLength": 1,
+      "title": "Label",
+      "type": "string"
+    },
+    "max_abs_calibration_intercept": {
+      "default": 0.1,
+      "minimum": 0,
+      "title": "Max Abs Calibration Intercept",
+      "type": "number"
+    },
+    "max_brier_score": {
+      "default": 0.25,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Max Brier Score",
+      "type": "number"
+    },
+    "max_calibration_slope": {
+      "default": 1.5,
+      "title": "Max Calibration Slope",
+      "type": "number"
+    },
+    "max_class_conditional_ece_gap": {
+      "default": 0.1,
+      "minimum": 0,
+      "title": "Max Class Conditional Ece Gap",
+      "type": "number"
+    },
+    "max_expected_calibration_error": {
+      "default": 0.1,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Max Expected Calibration Error",
+      "type": "number"
+    },
+    "max_log_loss": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Max Log Loss",
+      "type": "number"
+    },
+    "min_calibration_slope": {
+      "default": 0.5,
+      "title": "Min Calibration Slope",
+      "type": "number"
+    },
+    "min_observations": {
+      "default": 30,
+      "minimum": 10,
+      "title": "Min Observations",
+      "type": "integer"
+    },
+    "model_id": {
+      "minLength": 1,
+      "title": "Model Id",
+      "type": "string"
+    },
+    "model_version": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model Version"
+    },
+    "positive_return_threshold": {
+      "default": 0.0,
+      "title": "Positive Return Threshold",
+      "type": "number"
+    },
+    "return_basis": {
+      "default": "gross",
+      "enum": [
+        "gross",
+        "excess"
+      ],
+      "title": "Return Basis",
+      "type": "string"
+    },
+    "stability_min_class_observations": {
+      "default": 20,
+      "minimum": 10,
+      "title": "Stability Min Class Observations",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "model_id",
+    "label",
+    "evaluated_at"
+  ],
+  "title": "ModelCalibrationParameters",
+  "type": "object",
+  "x-diagnostic-id": "model-calibration",
+  "x-manifest-stage": "monitoring"
+}
